@@ -10,6 +10,8 @@ import ManRep from "./components/navbar/ManRep";
 import ManFor from "./components/navbar/ManFor";
 import ManLab from "./components/navbar/ManLab";
 import ManPhy from "./components/navbar/ManPhy";
+import ManPat from "./components/navbar/ManPat";
+import SwabK from "./components/navbar/SwabK";
 
 function RouterPage() {
   return (
@@ -17,6 +19,7 @@ function RouterPage() {
       <Nav />
       <Switch>
         <Route exact path="/login" component={Login} />
+        <Route exact path="/" component={Login} />
         <Route exact path="/forgotPassword" component={Forget} />
         <Route exact path="/Dashboard" component={Dashboard} />
         <Route exact path="/ManangeContractors" component={ManCont} />
@@ -26,6 +29,8 @@ function RouterPage() {
         <Route exact path="/ManangeLabs" component={ManLab} />
         <Route exact path="/ManangeLabs" component={ManLab} />
         <Route exact path="/Manangephysician" component={ManPhy} />
+        <Route exact path="/ManangePatients" component={ManPat} />
+        <Route exact path="/SwabK" component={SwabK} />
         <Route exact path="/AddNewContractors" component={AddContractor} />
       </Switch>
     </Router>

@@ -74,17 +74,16 @@ function Nav() {
     history.push('/Manangephysician')
   };
 
+  
   const navHandle8 = () => {
-    setDash(false);
-    setMancont(false);
-    setManemp(false);
-    setManrep(false);
-    setManform(false);
-    setManlab(false);
-    setManphy(false);
-    setManpat(false);
-    setSwak(true);
+    history.push('/ManangePatients')
   };
+
+    
+  const navHandle9 = () => {
+    history.push('/SwabK')
+  };
+
 
   return (
     <div className="nav">
@@ -148,15 +147,15 @@ function Nav() {
             </Grid>
             <Grid className="line6" />
 
-            <Grid className={manpat ? "mpa" : "non_mpa"}>
-              <p className={manpat ? "mpa_text" : "nonmpa_text"}>
+            <Grid className={location.pathname === "/ManangePatients"  ? "mpa" : "non_mpa"} onClick={navHandle8}>
+              <p className={location.pathname === "/ManangePatients"  ? "mpa_text" : "nonmpa_text"}>
                 Manage Patient
               </p>
             </Grid>
             <Grid className="line7" />
 
-            <Grid className={swak ? "swa" : "non_swa"}>
-              <p className={swak ? "swa_text" : "nonswa_text"}>Swab KITS</p>
+            <Grid className={location.pathname === "/SwabK" ? "swa" : "non_swa"} onClick={navHandle9}>
+              <p className={location.pathname === "/SwabK" ? "swa_text" : "nonswa_text"}>Swab KITS</p>
             </Grid>
           </Grid>
         </Grid>

@@ -267,7 +267,7 @@ text-align: center !important;
 
 .Hlabel{
     position: absolute;
-    width: 155px;
+    width: 255px;
     height: 25px;
     left: 38px;
     top: 16px;
@@ -283,7 +283,7 @@ text-align: center !important;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 550;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     color: #4A5E73;
 

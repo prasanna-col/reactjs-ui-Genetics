@@ -79,7 +79,7 @@ function ManPhy() {
       {addPhy ? (
         <AddContractor addPhy={addPhy} setAddPhy={setAddPhy} />
       ) : detail ? (
-        <PhyDetails />
+        <PhyDetails addPhy={addPhy} setDetail={setDetail}/>
       ) : (
         <div className="content">
           <div className="E_heading">
