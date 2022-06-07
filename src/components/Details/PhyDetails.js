@@ -17,7 +17,7 @@ import {
 } from "@material-ui/core";
 import "../../App.css";
 
-function PhyDetails({ addPhy, setAddPhy }) {
+function PhyDetails({ addPhy, setDetail }) {
   return (
     <div className="AddContractor">
       <div className="content">
@@ -61,8 +61,10 @@ function PhyDetails({ addPhy, setAddPhy }) {
                   >
                     <label>Health System</label>
                   </div>
-                  <div style={{ marginTop: "25px", marginLeft: "180px" }}>
-                    <Typography>Lorem Ipsum</Typography>
+                  <div style={{ marginTop: "22px", marginLeft: "180px" }}>
+                    <Typography style={{ fontWeight: "bold" }}>
+                      Lorem Ipsum
+                    </Typography>
                   </div>
                 </div>
 
@@ -80,8 +82,10 @@ function PhyDetails({ addPhy, setAddPhy }) {
                   >
                     <label>NPI #</label>
                   </div>
-                  <div style={{ marginTop: "25px", marginLeft: "180px" }}>
-                    <Typography>NPI 14598</Typography>
+                  <div style={{ marginTop: "22px", marginLeft: "175px" }}>
+                    <Typography style={{ fontWeight: "bold", width: 200 }}>
+                      NPI 14598
+                    </Typography>
                   </div>
                 </div>
 
@@ -100,7 +104,13 @@ function PhyDetails({ addPhy, setAddPhy }) {
                     <label>Street Address</label>
                   </div>
                   <div style={{ marginTop: "25px", marginLeft: "180px" }}>
-                    <Typography style={{ width: "218px", lineHeight: 2 }}>
+                    <Typography
+                      style={{
+                        width: "218px",
+                        lineHeight: 2,
+                        fontWeight: "bold",
+                      }}
+                    >
                       Department 98, 44-46, Morningside Road, Edinburgh,
                       Scotland EH104BF.
                     </Typography>
@@ -124,29 +134,29 @@ function PhyDetails({ addPhy, setAddPhy }) {
                     className="label"
                     style={{ position: "absolute", top: "20px" }}
                   >
-                    <label>Health System</label>
+                    <label>Physician Name</label>
                   </div>
-                  <div style={{ marginTop: "25px", marginLeft: "180px" }}>
-                    <Typography>Lorem Ipsum</Typography>
+                  <div style={{ marginTop: "22px", marginLeft: "180px" }}>
+                    <Typography style={{ fontWeight: "bold" }}>
+                      Scarlett Johnsson
+                    </Typography>
                   </div>
                 </div>
 
                 <div
                   className="email_address"
-                  style={{ position: "absolute", left: "40px", top: "220px" }}
+                  style={{ position: "absolute", left: "30px", top: "220px" }}
                 >
                   <div
                     className="label"
-                    style={{
-                      position: "absolute",
-                      width: "118px",
-                      top: "20px",
-                    }}
+                    style={{ position: "absolute", top: "20px" }}
                   >
-                    <label>Email Address</label>
+                    <label>License #</label>
                   </div>
-                  <div className="namee" style={{ top: "5px", left: "180px" }}>
-                    <InputBase className="namefield" style={{ left: "30px" }} />
+                  <div style={{ marginTop: "22px", marginLeft: "170px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      42623218333588
+                    </Typography>
                   </div>
                 </div>
 
@@ -156,16 +166,14 @@ function PhyDetails({ addPhy, setAddPhy }) {
                 >
                   <div
                     className="label"
-                    style={{
-                      position: "absolute",
-                      width: "126px",
-                      top: "20px",
-                    }}
+                    style={{ position: "absolute", top: "20px" }}
                   >
-                    <label>Phone Number</label>
+                    <label>City</label>
                   </div>
-                  <div className="namee" style={{ top: "5px", left: "180px" }}>
-                    <InputBase className="namefield" style={{ left: "30px" }} />
+                  <div style={{ marginTop: "22px", marginLeft: "160px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      New York
+                    </Typography>
                   </div>
                 </div>
 
@@ -175,16 +183,14 @@ function PhyDetails({ addPhy, setAddPhy }) {
                 >
                   <div
                     className="label"
-                    style={{
-                      position: "absolute",
-                      width: "122px",
-                      top: "20px",
-                    }}
+                    style={{ position: "absolute", top: "20px" }}
                   >
-                    <label>User Name</label>
+                    <label>State</label>
                   </div>
-                  <div className="namee" style={{ top: "5px", left: "180px" }}>
-                    <InputBase className="namefield" style={{ left: "30px" }} />
+                  <div style={{ marginTop: "22px", marginLeft: "160px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      California
+                    </Typography>
                   </div>
                 </div>
 
@@ -194,364 +200,98 @@ function PhyDetails({ addPhy, setAddPhy }) {
                 >
                   <div
                     className="label"
-                    style={{
-                      position: "absolute",
-                      width: "110px",
-                      top: "20px",
-                    }}
+                    style={{ position: "absolute", top: "20px" }}
                   >
-                    <label>State</label>
+                    <label>Zip Code</label>
                   </div>
-                  <div
-                    className="select"
-                    style={{ left: "180px", top: "10px" }}
-                  >
-                    <select
-                      placeholder="ID"
-                      style={{ left: "30px", fontWeight: "800" }}
-                      className="select_ins"
-                    >
-                      <option placeholder="ID">California</option>
-                      <option value="001">Cuba</option>
-                      <option value="002">Los Angels</option>
-                      <option value="003">Mexico</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div
-                  className="NCPA_member"
-                  style={{ position: "absolute", left: "40px", top: "530px" }}
-                >
-                  <div
-                    className="label"
-                    style={{
-                      position: "absolute",
-                      width: "130px",
-                      top: "20px",
-                    }}
-                  >
-                    <label>NCPA Member?</label>
-                  </div>
-                  <div className="radio">
-                    <FormControl>
-                      <RadioGroup defaultValue="yes">
-                        <div className="radio_butt">
-                          <FormControlLabel
-                            value="Yes"
-                            control={<Radio />}
-                            label="Yes"
-                          />
-                          <FormControlLabel
-                            value="No"
-                            control={<Radio />}
-                            label="No"
-                          />
-                        </div>
-                      </RadioGroup>
-                    </FormControl>
-                  </div>
-                </div>
-
-                <div
-                  className="part_id"
-                  style={{ position: "absolute", left: "40px", top: "600px" }}
-                >
-                  <div
-                    className="label"
-                    style={{
-                      position: "absolute",
-                      width: "116px",
-                      top: "20px",
-                    }}
-                  >
-                    <label>Partner Id</label>
-                  </div>
-                  <div className="namee" style={{ top: "5px", left: "180px" }}>
-                    <InputBase className="namefield" style={{ left: "30px" }} />
+                  <div style={{ marginTop: "22px", marginLeft: "160px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      CDF 78963
+                    </Typography>
                   </div>
                 </div>
               </Grid>
             </div>
           </Grid>
+
           <Grid item xs={3}>
-            <p>xs=3</p>
-          </Grid>
-          <Grid item xs={3}>
-            <p>xs=3</p>
+            <div
+              className="right_sideform"
+              style={{ position: "absolute", left: "640px", top: "1px" }}
+            >
+              <Grid container spacing={3}>
+                <div
+                  className="name"
+                  style={{ position: "relative", left: "600px", top: "140px" }}
+                >
+                  <div
+                    className="label"
+                    style={{ position: "absolute", top: "20px" }}
+                  >
+                    <label>Group Practice Name</label>
+                  </div>
+                  <div style={{ marginTop: "22px", marginLeft: "220px" }}>
+                    <Typography style={{ fontWeight: "bold" }}>
+                      The Pill Club
+                    </Typography>
+                  </div>
+                </div>
+
+                <div
+                  className="email_address"
+                  style={{ position: "absolute", left: "600px", top: "220px" }}
+                >
+                  <div
+                    className="label"
+                    style={{ position: "absolute", top: "20px" }}
+                  >
+                    <label>Email Address</label>
+                  </div>
+                  <div style={{ marginTop: "22px", marginLeft: "220px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      scarlettjohansson77@gmail.com
+                    </Typography>
+                  </div>
+                </div>
+
+                <div
+                  className="Phone_num"
+                  style={{ position: "absolute", left: "600px", top: "300px" }}
+                >
+                  <div
+                    className="label"
+                    style={{ position: "absolute", top: "20px" }}
+                  >
+                    <label>Phone Number</label>
+                  </div>
+                  <div style={{ marginTop: "22px", marginLeft: "220px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      +60 47896 42563
+                    </Typography>
+                  </div>
+                </div>
+
+                <div
+                  className="user_name"
+                  style={{ position: "absolute", left: "600px", top: "378px" }}
+                >
+                  <div
+                    className="label"
+                    style={{ position: "absolute", top: "20px" }}
+                  >
+                    <label>Fax Number</label>
+                  </div>
+                  <div style={{ marginTop: "22px", marginLeft: "220px" }}>
+                    <Typography style={{ width: 400, fontWeight: "bold" }}>
+                      +60 47896 42563
+                    </Typography>
+                  </div>
+                </div>
+              </Grid>
+            </div>
           </Grid>
         </Grid>
-        {/* <div
-          className="right_sideform"
-          style={{ position: "absolute", left: "1200px", top: "1px" }}
-        >
-          <Grid container spacing={3}>
-            <div
-              className="phar_name"
-              style={{ position: "absolute", left: "40px", top: "140px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "135px", top: "20px" }}
-              >
-                <label>Pharmacy Name</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="email_address"
-              style={{ position: "absolute", left: "40px", top: "220px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "118px", top: "20px" }}
-              >
-                <label>Email Address</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="Phone_num"
-              style={{ position: "absolute", left: "40px", top: "300px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "126px", top: "20px" }}
-              >
-                <label>Phone Number</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="user_name"
-              style={{ position: "absolute", left: "40px", top: "378px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "122px", top: "20px" }}
-              >
-                <label>User Name</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="State"
-              style={{ position: "absolute", left: "40px", top: "450px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "110px", top: "20px" }}
-              >
-                <label>State</label>
-              </div>
-              <div className="select" style={{ left: "180px", top: "10px" }}>
-                <select
-                  placeholder="ID"
-                  style={{ left: "30px", fontWeight: "800" }}
-                  className="select_ins"
-                >
-                  <option placeholder="ID">California</option>
-                  <option value="001">Cuba</option>
-                  <option value="002">Los Angels</option>
-                  <option value="003">Mexico</option>
-                </select>
-              </div>
-            </div>
-
-            <div
-              className="NCPA_member"
-              style={{ position: "absolute", left: "40px", top: "530px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "130px", top: "20px" }}
-              >
-                <label>NCPA Member?</label>
-              </div>
-              <div className="radio">
-                <FormControl>
-                  <RadioGroup defaultValue="yes">
-                    <div className="radio_butt">
-                      <FormControlLabel
-                        value="Yes"
-                        control={<Radio />}
-                        label="Yes"
-                      />
-                      <FormControlLabel
-                        value="No"
-                        control={<Radio />}
-                        label="No"
-                      />
-                    </div>
-                  </RadioGroup>
-                </FormControl>
-              </div>
-            </div>
-
-            <div
-              className="part_id"
-              style={{ position: "absolute", left: "40px", top: "600px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "116px", top: "20px" }}
-              >
-                <label>Partner Id</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-          </Grid>
-        </div> */}
-        {/* <div
-          className="right_sideform"
-          style={{ position: "absolute", left: "1200px", top: "1px" }}
-        >
-          <Grid container spacing={3}>
-            <div
-              className="phar_name"
-              style={{ position: "absolute", left: "40px", top: "140px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "135px", top: "20px" }}
-              >
-                <label>Pharmacy Name</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="email_address"
-              style={{ position: "absolute", left: "40px", top: "220px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "118px", top: "20px" }}
-              >
-                <label>Email Address</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="Phone_num"
-              style={{ position: "absolute", left: "40px", top: "300px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "126px", top: "20px" }}
-              >
-                <label>Phone Number</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="user_name"
-              style={{ position: "absolute", left: "40px", top: "378px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "122px", top: "20px" }}
-              >
-                <label>User Name</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-
-            <div
-              className="State"
-              style={{ position: "absolute", left: "40px", top: "450px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "110px", top: "20px" }}
-              >
-                <label>State</label>
-              </div>
-              <div className="select" style={{ left: "180px", top: "10px" }}>
-                <select
-                  placeholder="ID"
-                  style={{ left: "30px", fontWeight: "800" }}
-                  className="select_ins"
-                >
-                  <option placeholder="ID">California</option>
-                  <option value="001">Cuba</option>
-                  <option value="002">Los Angels</option>
-                  <option value="003">Mexico</option>
-                </select>
-              </div>
-            </div>
-
-            <div
-              className="NCPA_member"
-              style={{ position: "absolute", left: "40px", top: "530px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "130px", top: "20px" }}
-              >
-                <label>NCPA Member?</label>
-              </div>
-              <div className="radio">
-                <FormControl>
-                  <RadioGroup defaultValue="yes">
-                    <div className="radio_butt">
-                      <FormControlLabel
-                        value="Yes"
-                        control={<Radio />}
-                        label="Yes"
-                      />
-                      <FormControlLabel
-                        value="No"
-                        control={<Radio />}
-                        label="No"
-                      />
-                    </div>
-                  </RadioGroup>
-                </FormControl>
-              </div>
-            </div>
-
-            <div
-              className="part_id"
-              style={{ position: "absolute", left: "40px", top: "600px" }}
-            >
-              <div
-                className="label"
-                style={{ position: "absolute", width: "116px", top: "20px" }}
-              >
-                <label>Partner Id</label>
-              </div>
-              <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
-              </div>
-            </div>
-          </Grid>
-        </div> */}
-
+    
         <Grid
           className="add_buttons"
           style={{ position: "absolute", top: "606px", left: "-584px" }}
@@ -563,22 +303,9 @@ function PhyDetails({ addPhy, setAddPhy }) {
             <Button
               className="button01_field"
               style={{ color: "white" }}
-              onClick={() => setAddPhy(false)}
+              onClick={() => setDetail(false)}
             >
-              Cancel
-            </Button>
-          </Grid>
-
-          <Grid
-            className="button02"
-            style={{ marginLeft: "110px", background: "#207EA9" }}
-          >
-            <Button
-              className="button02_field"
-              style={{ color: "white" }}
-              onClick={() => setAddPhy(false)}
-            >
-              Save
+              Back
             </Button>
           </Grid>
         </Grid>
