@@ -137,7 +137,7 @@ function Login() {
               </a>
             </div>
             <Grid className="button">
-              <Button className="butt" href="/Dashboard">Sign in</Button>
+              <Button className="butt" href="/nav">Sign In</Button>
             </Grid>
           </div>
         )}
