@@ -1,0 +1,242 @@
+[
+    {
+        "id":"01",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#EF9035",
+        "status": "Dr.Approval Pending"
+      
+    },
+    {
+        "id":"02",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#2ECC71",
+        "status": "Doctor Approved"
+      
+    },
+    {
+        "id":"03",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#3498DB",
+        "status": "Product ordered"
+      
+    },
+    {
+        "id":"04",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#9B59B6",
+        "status": "Product Arrived"
+      
+    },
+    {
+        "id":"05",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#1ABC9C",
+        "status": "Product Delivered"
+      
+    },
+    {
+        "id":"06",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#E84393",
+        "status": "Waiting for Sample"
+      
+    },
+    {
+        "id":"07",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#2D3436",
+        "status": "Sample sent to lab"
+      
+    },
+    {
+        "id":"08",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#6C5CE7",
+        "status": "Report Received"
+      
+    },
+    {
+        "id":"09",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#27AE60",
+        "status": "Paid"
+      
+    },
+    {
+        "id":"10",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#2ECC71",
+        "status": "Doctor Approved"
+      
+    },
+    {
+        "id":"11",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#E84393",
+        "status": "Waiting for Sample"
+      
+    },
+    {
+        "id":"12",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#27AE60",
+        "status": "Dr.Approval Pending"
+      
+    },
+    {
+        "id":"13",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#EF9035",
+        "status": "Doctor Approved"
+      
+    },
+    {
+        "id":"14",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#1ABC9C",
+        "status": "Report Received"
+      
+    },
+    {
+        "id":"15",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#9B59B6",
+        "status": "Waiting for Sample"
+      
+    },
+    {
+        "id":"16",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#27AE60",
+        "status": "Dr.Approval Pending"
+      
+    },
+    {
+        "id":"17",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#EF9035",
+        "status": "Doctor Approved"
+      
+    },
+    {
+        "id":"18",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#9B59B6",
+        "status": "Report Received"
+      
+    },{
+        "id":"19",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#1ABC9C",
+        "status": "Report Received"
+      
+    },
+    {
+        "id":"20",
+        "date": "20/01/20",
+        "patId":"PAT 221",
+        "patName":"dustin Hoofman",
+        "gender":"Male",
+        "phNUm":"+60 47859 45698",
+        "email":"matthewmconaughey@gmail.com",
+        "background":"#EF9035",
+        "status": "Paid"
+      
+    }
+]
+

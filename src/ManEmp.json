@@ -1,0 +1,223 @@
+[
+    {
+        "id":"1",
+        "name":"Scarlett",
+        "empid":"EMP 789",
+        "mob":"+60 47859 45694",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"2",
+        "name":"Jhon",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45691",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can View",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"3",
+        "name":"Jhonson",
+        "empid":"EMP 789",
+        "mob":"+60 47859 45694",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can View",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"4",
+        "name":"Scar",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45695",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"5",
+        "name":"Jhonson",
+        "empid":"EMP 787",
+        "mob":"+60 47859 45696",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"6",
+        "name":"Scarlett",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45693",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"7",
+        "name":"Jhonson",
+        "empid":"EMP 787",
+        "mob":"+60 47859 45691",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can View",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"8",
+        "name":"Scarlett",
+        "empid":"EMP 784",
+        "mob":"+60 47859 45690",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"9",
+        "name":"Jhonson",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45692",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can View",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"10",
+        "name":"Scarlett",
+        "empid":"EMP 786",
+        "mob":"+60 47859 45691",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },    {
+        "id":"11",
+        "name":"Scarlett",
+        "empid":"EMP 789",
+        "mob":"+60 47859 45694",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"12",
+        "name":"Jhon",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45691",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can View",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"13",
+        "name":"Jhonson",
+        "empid":"EMP 789",
+        "mob":"+60 47859 45694",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can View",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"14",
+        "name":"Scar",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45695",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"15",
+        "name":"Jhonson",
+        "empid":"EMP 787",
+        "mob":"+60 47859 45696",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"16",
+        "name":"Scarlett",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45693",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"17",
+        "name":"Jhonson",
+        "empid":"EMP 787",
+        "mob":"+60 47859 45691",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can View",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"18",
+        "name":"Scarlett",
+        "empid":"EMP 784",
+        "mob":"+60 47859 45690",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    },
+    {
+        "id":"19",
+        "name":"Jhonson",
+        "empid":"EMP 781",
+        "mob":"+60 47859 45692",
+        "email":"scarlettjohansson88@gmail.com",
+        "role":"Can View",
+        "status":"Active",
+        "background": "#2ECC71"
+
+    },
+    {
+        "id":"20",
+        "name":"Scarlett",
+        "empid":"EMP 786",
+        "mob":"+60 47859 45691",
+        "email":"scarlettjohansson88@yahoo.com",
+        "role":"Can Edit",
+        "status":"Inactive",
+        "background": "#E74C3C"
+
+    }
+    
+
+]

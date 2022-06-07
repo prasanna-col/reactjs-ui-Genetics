@@ -1,0 +1,163 @@
+[
+    {
+       "id":"01",
+       "labName":"Apotheco",
+       "NOC":"Dustin Hoofman",
+       "Services":"Blood Test",
+       "phNum":"+60 47859 45698",
+       "email":"apotheco@gmail.com "
+    },
+    {
+        "id":"02",
+        "labName":"Bioplus Specialty",
+        "NOC":"Hoofman",
+        "Services":"Generic Test",
+        "phNum":"+60 47859 78541",
+        "email":"biopluspecialty14@gmail.com"
+     },
+     {
+        "id":"03",
+        "labName":"Apotheco",
+        "NOC":"Dustin Hoofman",
+        "Services":"Blood Test",
+        "phNum":"+60 47859 45698",
+        "email":"apotheco@gmail.com "
+     },
+     {
+         "id":"04",
+         "labName":"Bioplus Specialty",
+         "NOC":"Hoofman",
+         "Services":"Generic Test",
+         "phNum":"+60 47859 78541",
+         "email":"biopluspecialty14@gmail.com"
+      },
+      {
+        "id":"05",
+        "labName":"Apotheco",
+        "NOC":"Dustin Hoofman",
+        "Services":"Blood Test",
+        "phNum":"+60 47859 45698",
+        "email":"apotheco@gmail.com "
+     },
+     {
+         "id":"06",
+         "labName":"Bioplus Specialty",
+         "NOC":"Hoofman",
+         "Services":"Generic Test",
+         "phNum":"+60 47859 78541",
+         "email":"biopluspecialty14@gmail.com"
+      },
+      {
+        "id":"07",
+        "labName":"Apotheco",
+        "NOC":"Dustin Hoofman",
+        "Services":"Blood Test",
+        "phNum":"+60 47859 45698",
+        "email":"apotheco@gmail.com "
+     },
+     {
+         "id":"08",
+         "labName":"Bioplus Specialty",
+         "NOC":"Hoofman",
+         "Services":"Generic Test",
+         "phNum":"+60 47859 78541",
+         "email":"biopluspecialty14@gmail.com"
+      },
+      {
+        "id":"09",
+        "labName":"Apotheco",
+        "NOC":"Dustin Hoofman",
+        "Services":"Blood Test",
+        "phNum":"+60 47859 45698",
+        "email":"apotheco@gmail.com "
+     },
+     {
+         "id":"10",
+         "labName":"Bioplus Specialty",
+         "NOC":"Hoofman",
+         "Services":"Generic Test",
+         "phNum":"+60 47859 78541",
+         "email":"biopluspecialty14@gmail.com"
+      }, {
+        "id":"11",
+        "labName":"Apotheco",
+        "NOC":"Dustin Hoofman",
+        "Services":"Blood Test",
+        "phNum":"+60 47859 45698",
+        "email":"apotheco@gmail.com "
+     },
+     {
+         "id":"12",
+         "labName":"Bioplus Specialty",
+         "NOC":"Hoofman",
+         "Services":"Generic Test",
+         "phNum":"+60 47859 78541",
+         "email":"biopluspecialty14@gmail.com"
+      },
+      {
+         "id":"13",
+         "labName":"Apotheco",
+         "NOC":"Dustin Hoofman",
+         "Services":"Blood Test",
+         "phNum":"+60 47859 45698",
+         "email":"apotheco@gmail.com "
+      },
+      {
+          "id":"14",
+          "labName":"Bioplus Specialty",
+          "NOC":"Hoofman",
+          "Services":"Generic Test",
+          "phNum":"+60 47859 78541",
+          "email":"biopluspecialty14@gmail.com"
+       },
+       {
+         "id":"15",
+         "labName":"Apotheco",
+         "NOC":"Dustin Hoofman",
+         "Services":"Blood Test",
+         "phNum":"+60 47859 45698",
+         "email":"apotheco@gmail.com "
+      },
+      {
+          "id":"16",
+          "labName":"Bioplus Specialty",
+          "NOC":"Hoofman",
+          "Services":"Generic Test",
+          "phNum":"+60 47859 78541",
+          "email":"biopluspecialty14@gmail.com"
+       },
+       {
+         "id":"17",
+         "labName":"Apotheco",
+         "NOC":"Dustin Hoofman",
+         "Services":"Blood Test",
+         "phNum":"+60 47859 45698",
+         "email":"apotheco@gmail.com "
+      },
+      {
+          "id":"18",
+          "labName":"Bioplus Specialty",
+          "NOC":"Hoofman",
+          "Services":"Generic Test",
+          "phNum":"+60 47859 78541",
+          "email":"biopluspecialty14@gmail.com"
+       },
+       {
+         "id":"19",
+         "labName":"Apotheco",
+         "NOC":"Dustin Hoofman",
+         "Services":"Blood Test",
+         "phNum":"+60 47859 45698",
+         "email":"apotheco@gmail.com "
+      },
+      {
+          "id":"20",
+          "labName":"Bioplus Specialty",
+          "NOC":"Hoofman",
+          "Services":"Generic Test",
+          "phNum":"+60 47859 78541",
+          "email":"biopluspecialty14@gmail.com"
+       }
+    
+
+]
