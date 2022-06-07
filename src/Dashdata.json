@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Patient Status",
+        "index":"01",
+        "value": 
+        [
+            {
+                "id": "1",
+                "name": "Dr.Approval Pending",
+                "num" : "246",
+                "img" :"./.clock1.png",
+                "background":"#EF903599"
+            },
+            {
+                "id": "2",
+                "name": "Doctor Approved",
+                "num" : "246",
+                "background":"#2ECC7199"
+            },
+            {
+                "id": "3",
+                "name": "Test Accpeted",
+                "num" : "246",
+                "background":"#3498DB99"
+            },
+            {
+                "id": "4",
+                "name": "Test on hold",
+                "num" : "246",
+                "background":"#9B59B699"
+            },
+            {
+                "id": "5",
+                "name": "Test Shipped to Lab",
+                "num" : "246",
+                "background":"#1ABC9C99"
+            },
+            {
+                "id": "6",
+                "name": "Test Received by Lab",
+                "num" : "246",
+                "background":"#E8439399"
+            },
+            {
+                "id": "7",
+                "name": "Test Inprocess at Lab",
+                "num" : "246",
+                "background":"#2D343699"
+                
+            },
+            {
+                "id": "8",
+                "name": "Test Resulted",
+                "num" : "246",
+                "background":"#6C5CE799"
+            },
+            {
+                "id": "9",
+                "name": "Paid",
+                "num" : "246",
+                "background":"#27AE6099"
+            }
+        ]
+    }
+
+    
+]

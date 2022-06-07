@@ -1,0 +1,26 @@
+[
+    {
+    "title":"Swab KIT Status",
+    "index":"01",
+    "value":[
+        {
+            "id": "1",
+            "name": "Swab KIT Ordered",
+            "num" : "246",
+            "background":"#9B59B699"
+        },
+        {
+            "id": "2",
+            "name": "Swab KIT Delivered",
+            "num" : "246",
+            "background":"#2ECC7199"
+        },
+        {
+            "id": "3",
+            "name": "Swab KIT Returned",
+            "num" : "246",
+            "background":"#E74C3C99"
+        }
+    ]
+}
+]

@@ -1,0 +1,305 @@
+.namee {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 330px;
+    top: 80px;
+    background: #F2F7F9;
+    box-shadow: 0px 0px 5px (0, 0, 0, 0.15);
+    border-radius: 100px;
+    border: 1px solid rgb(218, 216, 216);
+    
+}
+
+.namefield {
+    position: absolute;
+    width: 250px;
+    height: 32px;
+    top: 11px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    color: #A1A1A1;
+    background: transparent;
+    overflow-x: hidden;
+
+}
+
+.select {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 20px;
+    top: 80px;
+    background: #F2F7F9;
+    box-shadow: 0px 0px 5px (0, 0, 0, 0.15);
+    border-radius: 100px;
+    border: 1px solid rgb(218, 216, 216);
+
+}
+
+
+.select_ins {
+    position: absolute;
+    width: 250px;
+    height: 32px;
+    left: 30px;
+    top: 11px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    color: #A1A1A1;
+    background: transparent;
+
+}
+
+.email {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 950px;
+    top: 80px;
+    background: #F2F7F9;
+    box-shadow: 0px 0px 5px (0, 0, 0, 0.15);
+    border-radius: 100px;
+    border: 1px solid rgb(218, 216, 216);
+}
+
+.email_field {
+    position: absolute;
+    width: 250px;
+    height: 32px;
+    top: 11px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #A1A1A1;
+    background: transparent;
+}
+
+.button01 {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 1265px;
+    top: 80px;
+    border: 0px solid green;
+    border-radius: 30px;
+    background: #66B04E;
+}
+
+.button01_field {
+    width: 120px;
+    height: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    background: transparent;
+
+}
+
+.button02 {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 1395px;
+    top: 80px;
+    border: 0px solid #7F8C8D;
+    border-radius: 30px;
+    background: #7F8C8D;
+}
+
+.button02_field {
+    width: 120px;
+    height: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    background: transparent;
+
+}
+
+.button03 {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 1530px;
+    top: 80px;
+    background: #207EA9;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.button03_field {
+    position: absolute;
+    width: 160px;
+    height: 50px;
+}
+
+.fields{
+    position:absolute;
+    top: -20px;
+    left: 1px;
+}
+
+.form {
+    position: absolute;
+    width: 1800px;
+    height: 570px;
+    left: 35px;
+    top: 130px;
+    background: #F4F9FB;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 1px rgb(206, 206, 206);
+    overflow-y: scroll;
+}
+
+
+
+.cell1{
+width: 3px;
+padding: 6px !important;
+text-align: center !important;
+}
+
+.cell2{
+    width: 150px;
+    padding: 15px !important;
+
+}
+
+.cell3{
+    width: 118px;
+    padding: 15px;
+}
+
+.cell4{
+    width: 140px;
+    padding: 15px;
+}
+
+.status{
+    
+    width: 65px;
+    padding: 3px;
+    height: 24px;
+    margin: -4px;
+    top: 0;
+   
+    border-radius: 50px;
+}
+
+.status_texx{
+    left: 8px;
+    top: 2px;
+    position: relative;
+    color: white;
+}
+
+.paginationBttns{
+    
+    position:absolute;
+    top: 700px;
+    left: 1670px;
+    width: 130px;
+    height: 24px;
+    list-style: none;
+    display: flex;
+ 
+    
+
+}
+
+.paginationBttns a {
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 8px;
+    border-radius: 25px;
+    border:0px solid grey;  
+    cursor:pointer;
+}
+
+.paginationBttns a:hover{
+    color:white;
+    background-color:grey ;
+}
+
+.paginationActive a{
+    color:white;
+    background-color: #207EA9;
+
+}
+
+.CustomContent {
+    position: absolute;
+    width: 1880px;
+    height: 755px;
+    left: 20px;
+    top: 140px;
+    margin: -10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(206, 206, 206);
+    overflow-x: scroll;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rectangleBox{
+    position: absolute;
+    width: 1828px;
+    height: 56px;
+    left: 27px;
+    top: 60px;
+    background: #F4F9FB;
+    border-radius: 5px;
+}
+
+.Hlabel{
+    position: absolute;
+    width: 155px;
+    height: 25px;
+    left: 38px;
+    top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 25px;
+    color: #2C3E50;
+}
+
+.label{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4A5E73;
+
+}
+
+.radio_butt{
+    position: absolute;
+    left: 187px;
+    top:11px;
+    display: flex;
+}
+
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding-bottom: 634px;
+    padding-top: 231px;
+    padding-bottom: 265px;
+    height: 400px;
+    padding: 4px;
+}
