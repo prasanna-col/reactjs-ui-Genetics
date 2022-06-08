@@ -17,6 +17,8 @@ import {
   Divider,
 } from "@material-ui/core";
 import "../../App.css";
+import FamilyTable from "./Swabk/FamilyTable";
+import Hereditary from "./Swabk/Hereditary";
 
 function Swabk() {
   return (
@@ -321,13 +323,58 @@ function Swabk() {
               width: 400,
               fontWeight: "bold",
               fontSize: 14,
-              marginLeft: -180,
+              marginLeft: -60,
             }}
           >
             No
           </Typography>
         </Grid>
 
+        <Grid style={{ display: "flex", marginTop: 20, marginLeft: 60 }}>
+          <label style={{ width: 400, fontSize: 14 }}>
+            Do you have a personal history of Colan Polyps
+          </label>
+
+          <Typography
+            style={{
+              width: 400,
+              fontWeight: "bold",
+              fontSize: 14,
+              marginLeft: -80,
+            }}
+          >
+            10, 24/10/2020
+          </Typography>
+        </Grid>
+
+        <Grid style={{ display: "flex", marginTop: 20, marginLeft: 60 }}>
+          <label style={{ width: 400, fontSize: 14, lineHeight: 2 }}>
+            Have you ever been tested for a DNA cancer
+            <br />
+            screening in your lifetime?
+          </label>
+
+          <Typography
+            style={{
+              width: 400,
+              fontWeight: "bold",
+              fontSize: 14,
+              marginLeft: -80,
+            }}
+          >
+            28
+          </Typography>
+        </Grid>
+
+        <div className="rectangleBox" style={{ marginTop: 20 }}>
+          <div className="Hlabel">
+            <label>Your Family Detail</label>
+          </div>
+        </div>
+
+        <FamilyTable />
+        <Hereditary />
+        {/* 
         <Grid
           className="add_buttons"
           style={{ position: "absolute", top: "606px", left: "-584px" }}
@@ -344,7 +391,7 @@ function Swabk() {
               Back
             </Button>
           </Grid>
-        </Grid>
+        </Grid> */}
       </div>
     </div>
   );

@@ -256,26 +256,24 @@ text-align: center !important;
 }
 
 .rectangleBox{
-    position: absolute;
     width: 1828px;
     height: 56px;
     left: 27px;
     top: 60px;
     background: #F4F9FB;
     border-radius: 5px;
+    margin-left: 20px;
 }
 
 .Hlabel{
-    position: absolute;
-    width: 255px;
-    height: 25px;
-    left: 38px;
-    top: 16px;
+    margin-left: 40px;
+    width: 300px;
+    height: 225px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 19px;
-    line-height: 25px;
+    line-height: 60px;
     color: #2C3E50;
 }
 
