@@ -3,6 +3,8 @@ import { Grid, Paper, Typography } from "@material-ui/core";
 import Ethnicity from "./Ethnicity";
 import Insurance from "./Insurance";
 import PhotoID from "./PhotoID";
+import physician from "../../../Json/Physicain.json";
+import patient from "../../../Json/Patient.json";
 
 function Hereditary() {
   return (
@@ -35,19 +37,19 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Health System</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                Lorem ipsum
+                {physician.health_system}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Practice Name</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                Johnny Depp
+                {physician.practice_name}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Physician Name</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                Johnny Depp
+                {physician.phyician_name}
               </Typography>
             </Grid>
           </Grid>
@@ -60,19 +62,19 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>License #</label>
               <Typography style={{ marginLeft: 120, fontWeight: "bold" }}>
-                478965463
+                {physician.license}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>NPI #</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                7546555
+                {physician.npi}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Phone Number</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                +1 789 8512
+                {physician.phone}
               </Typography>
             </Grid>
           </Grid>
@@ -87,20 +89,19 @@ function Hereditary() {
               <Typography
                 style={{ marginLeft: 120, fontWeight: "bold", width: 250 }}
               >
-                Department 98, 44-46, Morningside Road, Edinburgh, Scotland EH10
-                .4BF
+                {physician.Address}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>State</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                Cardiff
+                {physician.State}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Email Address</label>
               <Typography style={{ marginLeft: 90, fontWeight: "bold" }}>
-                stevesmith88@gmail.com
+                {physician.email}
               </Typography>
             </Grid>
           </Grid>
@@ -119,13 +120,13 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>City</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                Edinburgh
+                {physician.city}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Fax Number</label>
               <Typography style={{ marginLeft: 110, fontWeight: "bold" }}>
-                +1 789 8512
+                {physician.fax_number}
               </Typography>
             </Grid>
           </Grid>
@@ -144,7 +145,7 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Zip Code</label>
               <Typography style={{ marginLeft: 120, fontWeight: "bold" }}>
-                VF 7893
+                {physician.zip_code}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
@@ -168,19 +169,19 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Health System</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                Lorem ipsum
+                {physician.health_system}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Practice Name</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                Johnny Depp
+                {physician.practice_name}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Physician Name</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                Scarlet Johnson
+                {physician.phyician_name}
               </Typography>
             </Grid>
           </Grid>
@@ -193,19 +194,19 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>License #</label>
               <Typography style={{ marginLeft: 120, fontWeight: "bold" }}>
-                478965463
+                {physician.license}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>NPI #</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                7546555
+                {physician.npi}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Phone Number</label>
               <Typography style={{ marginLeft: 80, fontWeight: "bold" }}>
-                +1 789 8512
+                {physician.phone}
               </Typography>
             </Grid>
           </Grid>
@@ -220,20 +221,19 @@ function Hereditary() {
               <Typography
                 style={{ marginLeft: 120, fontWeight: "bold", width: 250 }}
               >
-                Department 98, 44-46, Morningside Road, Edinburgh, Scotland EH10
-                .4BF
+                {physician.Address}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>State</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                Cardiff
+                {physician.State}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Email Address</label>
               <Typography style={{ marginLeft: 90, fontWeight: "bold" }}>
-                stevesmith88@gmail.com
+                {physician.email}
               </Typography>
             </Grid>
           </Grid>
@@ -252,13 +252,13 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>City</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                Edinburgh
+                {physician.city}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Fax Number</label>
               <Typography style={{ marginLeft: 110, fontWeight: "bold" }}>
-                +1 789 8512
+                {physician.fax_number}
               </Typography>
             </Grid>
           </Grid>
@@ -277,7 +277,7 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Zip Code</label>
               <Typography style={{ marginLeft: 120, fontWeight: "bold" }}>
-                VF 7893
+                {physician.zip_code}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
@@ -301,19 +301,19 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Last Name</label>
               <Typography style={{ marginLeft: 120, fontWeight: "bold" }}>
-                johansson
+                {patient.lastName}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>First Name</label>
               <Typography style={{ marginLeft: 120, fontWeight: "bold" }}>
-                Scarlett
+                {patient.firstName}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>MI</label>
               <Typography style={{ marginLeft: 180, fontWeight: "bold" }}>
-                S A
+                {physician.mi}
               </Typography>
             </Grid>
           </Grid>
@@ -326,19 +326,19 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>DOB</label>
               <Typography style={{ marginLeft: 160, fontWeight: "bold" }}>
-                22/01/2001
+                {patient.dob}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Gender</label>
               <Typography style={{ marginLeft: 150, fontWeight: "bold" }}>
-                Female
+                {patient.gender}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Phone Number</label>
               <Typography style={{ marginLeft: 90, fontWeight: "bold" }}>
-                +1 789 8512
+                {patient.phone}
               </Typography>
             </Grid>
           </Grid>
@@ -353,20 +353,19 @@ function Hereditary() {
               <Typography
                 style={{ marginLeft: 80, fontWeight: "bold", width: 250 }}
               >
-                Department 98, 44-46, Morningside Road, Edinburgh, Scotland EH10
-                .4BF
+                {physician.Address}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>City</label>
               <Typography style={{ marginLeft: 180, fontWeight: "bold" }}>
-                Fenaro Vello
+                {physician.city}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Email Address</label>
               <Typography style={{ marginLeft: 100, fontWeight: "bold" }}>
-                scarletjohn@gmail.com
+                {patient.email}
               </Typography>
             </Grid>
           </Grid>
@@ -385,13 +384,13 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Zip Code</label>
               <Typography style={{ marginLeft: 145, fontWeight: "bold" }}>
-                VF 7893
+                {physician.zip_code}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>State</label>
               <Typography style={{ marginLeft: 165, fontWeight: "bold" }}>
-                Edinburgh
+                {physician.State}
               </Typography>
             </Grid>
           </Grid>
@@ -410,7 +409,7 @@ function Hereditary() {
             <Grid item xs={3} style={{ display: "flex" }}>
               <label>Best Time to Call</label>
               <Typography style={{ marginLeft: 95, fontWeight: "bold" }}>
-                Afternoon
+                {physician.best_time}
               </Typography>
             </Grid>
             <Grid item xs={3} style={{ display: "flex" }}>
@@ -442,7 +441,7 @@ function Hereditary() {
               <label>Insurance Card and Photo ID Image</label>
             </div>
           </div>
-          <PhotoID/>
+          <PhotoID />
         </div>
       </Paper>
     </div>

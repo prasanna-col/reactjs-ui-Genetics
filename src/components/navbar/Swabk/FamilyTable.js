@@ -7,22 +7,13 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import family from "../../../Json/Family.json"
 
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
   },
 });
-
-function createData(Ftype, relation, Name, Cancer, age) {
-  return { Ftype, relation, Name, Cancer, age };
-}
-
-const rows = [
-  createData("Personal History", "Self", "Johnny Depp", "Lung", 25),
-  createData("Mother's Side", "Grandfather", "Steve Smith", "Colon", 30),
-  createData("Father's Side", "Mother", "Emma Watson", "Prostate", 14),
-];
 
 function FamilyTable() {
   const classes = useStyles();
@@ -49,14 +40,14 @@ function FamilyTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.Ftype} style={{ backgroundColor: "#fff" }}>
+          {family.map((row, index) => (
+            <TableRow key={index} style={{ backgroundColor: "#fff" }}>
               <TableCell component="th" scope="row" style={{ marginLeft: 22 }}>
-                {row.Ftype}
+                {row.family_type}
               </TableCell>
               <TableCell>{row.relation}</TableCell>
-              <TableCell>{row.Name}</TableCell>
-              <TableCell>{row.Cancer}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell>{row.cancer_type}</TableCell>
               <TableCell>{row.age}</TableCell>
             </TableRow>
           ))}

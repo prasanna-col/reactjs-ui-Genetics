@@ -19,6 +19,8 @@ import {
 import "../../App.css";
 import FamilyTable from "./Swabk/FamilyTable";
 import Hereditary from "./Swabk/Hereditary";
+import patient from "../../Json/Patient.json";
+import PatientConsent from "./Swabk/PatientConsent";
 
 function Swabk() {
   return (
@@ -66,7 +68,7 @@ function Swabk() {
                   </div>
                   <div style={{ marginTop: "22px", marginLeft: "180px" }}>
                     <Typography style={{ fontWeight: "bold", fontSize: 14 }}>
-                      Johnsson
+                      {patient.lastName}
                     </Typography>
                   </div>
                 </div>
@@ -89,7 +91,7 @@ function Swabk() {
                     <Typography
                       style={{ fontWeight: "bold", width: 200, fontSize: 14 }}
                     >
-                      Female
+                      {patient.gender}
                     </Typography>
                   </div>
                 </div>
@@ -115,7 +117,7 @@ function Swabk() {
                   </div>
                   <div style={{ marginTop: "22px", marginLeft: "180px" }}>
                     <Typography style={{ fontWeight: "bold", fontSize: 14 }}>
-                      Scarlett
+                      {patient.firstName}
                     </Typography>
                   </div>
                 </div>
@@ -134,7 +136,7 @@ function Swabk() {
                     <Typography
                       style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
                     >
-                      +1 789 1425
+                      {patient.phone}
                     </Typography>
                   </div>
                 </div>
@@ -160,7 +162,7 @@ function Swabk() {
                   </div>
                   <div style={{ marginTop: "22px", marginLeft: "220px" }}>
                     <Typography style={{ fontWeight: "bold", fontSize: 14 }}>
-                      20/02/2020
+                      {patient.dob}
                     </Typography>
                   </div>
                 </div>
@@ -179,7 +181,7 @@ function Swabk() {
                     <Typography
                       style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
                     >
-                      scarlettjohansson77@gmail.com
+                      {patient.email}
                     </Typography>
                   </div>
                 </div>
@@ -374,24 +376,8 @@ function Swabk() {
 
         <FamilyTable />
         <Hereditary />
-        {/* 
-        <Grid
-          className="add_buttons"
-          style={{ position: "absolute", top: "606px", left: "-584px" }}
-        >
-          <Grid
-            className="button01"
-            style={{ marginLeft: "90px", background: "#7F8C8D" }}
-          >
-            <Button
-              className="button01_field"
-              style={{ color: "white" }}
-              //   onClick={() => setDetail(false)}
-            >
-              Back
-            </Button>
-          </Grid>
-        </Grid> */}
+
+        <PatientConsent />
       </div>
     </div>
   );
