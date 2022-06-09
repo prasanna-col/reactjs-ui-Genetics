@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Paper, Typography } from "@material-ui/core";
 import Ethnicity from "./Ethnicity";
 import Insurance from "./Insurance";
+import PhotoID from "./PhotoID";
 
 function Hereditary() {
   return (
@@ -22,7 +23,7 @@ function Hereditary() {
           Hereditary Cancer Requisition
         </div>
       </Paper>
-      <Paper elevation={3} style={{ height: 1600, marginTop: -15 }}>
+      <Paper elevation={3} style={{ height: 2000, marginTop: -15 }}>
         <div>
           <div className="rectangleBox" style={{ marginTop: 20 }}>
             <div className="Hlabel">
@@ -433,6 +434,16 @@ function Hereditary() {
           <br />
         </div>
         <Insurance />
+
+        {/* PhotoId */}
+        <div>
+          <div className="rectangleBox" style={{ marginTop: 20 }}>
+            <div className="Hlabel">
+              <label>Insurance Card and Photo ID Image</label>
+            </div>
+          </div>
+          <PhotoID/>
+        </div>
       </Paper>
     </div>
   );
