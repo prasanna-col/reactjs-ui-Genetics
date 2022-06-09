@@ -24,7 +24,7 @@ function Dashboard() {
         <div className="data">
           {datas.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
               <div className="top_head" style={{
                     marginTop: "10px",
                     width: "1880px",
