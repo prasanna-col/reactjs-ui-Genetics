@@ -11,7 +11,7 @@ import family from "../../../Json/Family.json"
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: 800,
   },
 });
 
@@ -22,13 +22,14 @@ function FamilyTable() {
     <TableContainer
       component={Paper}
       style={{
-        width: "97%",
+        width: "97.5%",
         marginLeft: 22,
-        marginTop: 10,
-        backgroundColor: "#f8ebb8",
+        marginTop: 5,
+        backgroundColor: "#FDF7F1",
         marginBottom: 30,
       }}
     >
+      
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>

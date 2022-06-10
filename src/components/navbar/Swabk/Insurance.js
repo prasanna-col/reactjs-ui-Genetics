@@ -7,12 +7,12 @@ function Insurance() {
       <Grid
         style={{
           background: "#F4F9FB",
-          marginLeft: 60,
-          marginTop: 22,
-          width: "90%",
+          marginLeft: 8,
+          marginTop: 2,
+          width: "87%",
           border: "1px solid #dcdcdc",
           borderWidth: 1,
-          height: "20%",
+          height: "auto",
           padding: "25px",
           borderRadius: "10px",
         }}
@@ -66,7 +66,7 @@ function Insurance() {
                 width: 400,
                 fontWeight: "bold",
                 fontSize: 14,
-                marginLeft: -170,
+                marginLeft: -180,
               }}
             >
               Not Applicable
