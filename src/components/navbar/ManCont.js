@@ -109,7 +109,7 @@ function ManCont() {
                 borderRadius: "10px",
               }}
             >
-              <div
+              {/* <div
                 style={{
                   marginLeft: "25px",
                   position: "relative",
@@ -117,7 +117,18 @@ function ManCont() {
                 }}
               >
                 List of Contractors
-              </div>
+              </div> */}
+              <Typography
+                variant="h5"
+                style={{
+                  marginTop: "20px",
+                  marginLeft: "25px",
+                  position: "relative",
+                  top: "-7px",
+                }}
+              >
+                List of Contractors
+              </Typography>
             </h2>
           </div>
           <Grid container spacing={5}>

@@ -115,15 +115,17 @@ function ManEmp() {
                 borderRadius: "10px",
               }}
             >
-              <div
+            <Typography
+                variant="h5"
                 style={{
+                  marginTop: "20px",
                   marginLeft: "25px",
                   position: "relative",
                   top: "-7px",
                 }}
               >
-                List of Genetix Employees
-              </div>
+                List of Contractors
+              </Typography>
             </h2>
           </div>
 

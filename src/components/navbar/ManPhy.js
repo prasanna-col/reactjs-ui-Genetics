@@ -105,15 +105,17 @@ function ManPhy() {
                 borderRadius: "10px",
               }}
             >
-              <div
+              <Typography
+                variant="h5"
                 style={{
+                  marginTop: "20px",
                   marginLeft: "25px",
                   position: "relative",
                   top: "-7px",
                 }}
               >
                 List of Physicians
-              </div>
+              </Typography>
             </h2>
           </div>
 

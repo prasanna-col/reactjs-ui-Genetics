@@ -15,39 +15,51 @@ import icon10 from "../img&Logos/10.png";
 import icon12 from "../img&Logos/12.png";
 
 function Dashboard() {
-  
-
-
   return (
     <div className="dash_contents">
-      <div className= "content1" >
+      <div className="content1">
         <div className="data">
           {datas.map((item, index) => {
             return (
               <div key={index}>
-              <div className="top_head" style={{
+                <div
+                  className="top_head"
+                  style={{
                     marginTop: "10px",
                     width: "1880px",
                     border: "0px solid grey",
                     boxShadow: " 0px 1px 0px rgb(206, 206, 206)",
                     borderRadius: "10px",
-                  }}>
-                
-                  <div className="top_head_name" style={{ marginLeft: "20px"}}>
-                   <h2 style={{marginTop:"20px",position:"relative" ,top:'-9px'}}>{item.title}</h2>
+                  }}
+                >
+                  <div className="top_head_name" style={{ marginLeft: "20px" }}>
+                    {/* <h2 style={{marginTop:"20px",position:"relative" ,top:'-9px'}}>{item.title}</h2> */}
+                    <Typography
+                      variant="h5"
+                      style={{
+                        marginTop: "20px",
+                        position: "relative",
+                        top: "-9px",
+                      }}
+                    >
+                      {item.title}
+                    </Typography>
                   </div>
-      
                 </div>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} style={{ marginTop: 10 }}>
                   {item.value.map((data, i) => (
                     <Grid item xs={3}>
                       <div
                         className="datas"
                         style={{ background: data.background }}
                       >
-                        <h2 style={{ marginLeft: "80px" ,marginTop:'5px'}}>{data.num}</h2>
+                        <h2 style={{ marginLeft: "80px", marginTop: "5px" }}>
+                          {data.num}
+                        </h2>
                         <Typography>
-                          <p style={{ marginLeft: "80px",marginTop:'5px'  }}>{data.name}</p>
+                          <p style={{ marginLeft: "80px", marginTop: "5px" }}>
+                            {data.name}
+                          </p>
                         </Typography>
                       </div>
                     </Grid>
@@ -235,29 +247,44 @@ function Dashboard() {
           {data.map((item, index) => {
             return (
               <div>
-              <div className="top_head" style={{
+                <div
+                  className="top_head"
+                  style={{
                     marginTop: "10px",
                     width: "1880px",
                     border: "0px solid grey",
                     boxShadow: " 0px 1px 0px rgb(206, 206, 206)",
                     borderRadius: "10px",
-                  }}>
-                
+                  }}
+                >
                   <div className="top_head_name" style={{ marginLeft: "20px" }}>
-                    <h2 style={{marginTop:"20px" ,position:"relative" ,top:'-9px'}}>{item.title}</h2>
+                    {/* <h2 style={{marginTop:"20px" ,position:"relative" ,top:'-9px'}}>{item.title}</h2> */}
+                    <Typography
+                      variant="h5"
+                      style={{
+                        marginTop: "20px",
+                        position: "relative",
+                        top: "-9px",
+                      }}
+                    >
+                      {item.title}
+                    </Typography>
                   </div>
-               
                 </div>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} style={{ marginTop: 10 }}>
                   {item.value.map((data, i) => (
                     <Grid item xs={3}>
                       <div
                         className="datas"
                         style={{ background: data.background }}
                       >
-                        <h2 style={{ marginLeft: "80px" , marginTop:'5px'}}>{data.num}</h2>
+                        <h2 style={{ marginLeft: "80px", marginTop: "5px" }}>
+                          {data.num}
+                        </h2>
                         <Typography>
-                          <p style={{ marginLeft: "80px" ,marginTop:'5px'}}>{data.name}</p>
+                          <p style={{ marginLeft: "80px", marginTop: "5px" }}>
+                            {data.name}
+                          </p>
                         </Typography>
                       </div>
                     </Grid>

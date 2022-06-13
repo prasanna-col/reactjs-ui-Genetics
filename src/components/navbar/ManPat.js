@@ -86,11 +86,18 @@ function ManPat() {
             borderRadius: "10px",
           }}
         >
-          <div
-            style={{ marginLeft: "25px", position: "relative", top: "-7px" }}
-          >
-            List of Patients
-          </div>
+             <Typography
+                variant="h5"
+                style={{
+                  marginTop: "20px",
+                  marginLeft: "25px",
+                  position: "relative",
+                  top: "-7px",
+                }}
+              >
+              List of Patients
+              </Typography>
+          
         </h2>
       </div>
       <Grid container spacing={5}>

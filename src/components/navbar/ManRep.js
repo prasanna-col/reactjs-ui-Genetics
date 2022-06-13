@@ -89,11 +89,17 @@ function ManRep() {
             borderRadius: "10px",
           }}
         >
-          <div
-            style={{ marginLeft: "25px", position: "relative", top: "-7px" }}
+          <Typography
+            variant="h5"
+            style={{
+              marginTop: "20px",
+              marginLeft: "25px",
+              position: "relative",
+              top: "-7px",
+            }}
           >
             Reports
-          </div>
+          </Typography>
         </h2>
       </div>
       <Grid container spacing={5}>
