@@ -8,6 +8,7 @@ import {
   TableRow,
   InputBase,
   Button,
+  Typography,
 } from "@material-ui/core";
 import forms from "../../ManPhy.json";
 import GA from "../img&Logos/GroupArrow.png";
@@ -43,12 +44,24 @@ function ManPhy() {
     .map((data) => {
       return (
         <TableRow>
-          <TableCell>{data.id}</TableCell>
-          <TableCell>{data.name}</TableCell>
-          <TableCell>{data.group}</TableCell>
-          <TableCell> {data.npi}</TableCell>
-          <TableCell>{data.License}</TableCell>
-          <TableCell>{data.phone}</TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.id}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.name}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.group}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.npi}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.License}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.phone}</Typography>
+          </TableCell>
           <TableCell>
             <img src={view} alt="" onClick={detailClick} />
             <img
@@ -79,7 +92,7 @@ function ManPhy() {
       {addPhy ? (
         <AddContractor addPhy={addPhy} setAddPhy={setAddPhy} />
       ) : detail ? (
-        <PhyDetails addPhy={addPhy} setDetail={setDetail}/>
+        <PhyDetails addPhy={addPhy} setDetail={setDetail} />
       ) : (
         <div className="content">
           <div className="E_heading">
@@ -164,9 +177,11 @@ function ManPhy() {
             <Table stickyHeader>
               <TableHead style={{ background: "transparent" }}>
                 <TableRow>
-                  <TableCell style={{ width: "2px" }}>S.No</TableCell>
+                  <TableCell style={{ width: "2px" }}>
+                    <Typography variant="body2">S.No</Typography>
+                  </TableCell>
                   <TableCell className="thead">
-                    Physician Name
+                    <Typography variant="body2">Physician Name</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -179,20 +194,20 @@ function ManPhy() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    Group Practice Name
+                    <Typography variant="body2">Group Practice Name</Typography>
                     <img
                       src={GA}
                       alt=""
                       style={{
                         position: "absolute",
-                        left: "180px",
+                        left: "200px",
                         top: "20px",
                       }}
                       className="groupArrow"
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    NPI #
+                    <Typography variant="body2">NPI #</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -205,7 +220,7 @@ function ManPhy() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    License #
+                    <Typography variant="body2">License #</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -218,7 +233,7 @@ function ManPhy() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    Phone Number
+                    <Typography variant="body2">Phone Number</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -231,7 +246,7 @@ function ManPhy() {
                     />
                   </TableCell>
                   <TableCell style={{ marginRight: "180px" }} className="thead">
-                    Actions
+                    <Typography variant="body2">Actions</Typography>
                   </TableCell>
                 </TableRow>
               </TableHead>

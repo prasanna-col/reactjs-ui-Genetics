@@ -16,6 +16,7 @@ import {
   TablePagination,
   TableRow,
   TextField,
+  Typography,
 } from "@material-ui/core";
 import "../navbarCSS/manCont.css";
 import Paper from "@mui/material/Paper";
@@ -34,8 +35,6 @@ function ManCont() {
 
   const [open, setOpen] = React.useState(false);
 
-
-
   const addClick = () => {
     setAdd(true);
   };
@@ -51,12 +50,24 @@ function ManCont() {
     .map((data) => {
       return (
         <TableRow>
-          <TableCell>{data.id}</TableCell>
-          <TableCell>{data.name}</TableCell>
-          <TableCell>{data.CONT}</TableCell>
-          <TableCell> {data.Phone}</TableCell>
-          <TableCell>{data.email}</TableCell>
-          <TableCell>{data.address}</TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.id}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.name}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.CONT}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.Phone}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.email}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.address}</Typography>
+          </TableCell>
           <TableCell>
             <img src={view} alt="" />
             <img
@@ -148,11 +159,15 @@ function ManCont() {
               </Grid>
 
               <Grid className="button01" style={{ marginLeft: "90px" }}>
-                <Button className="button01_field" style={{ color: "white" }} onClick={()=> setOpen(true)}>
+                <Button
+                  className="button01_field"
+                  style={{ color: "white" }}
+                  onClick={() => setOpen(true)}
+                >
                   filter
                 </Button>
               </Grid>
-              <RoleModal open={open} setOpen={setOpen}/>
+              <RoleModal open={open} setOpen={setOpen} />
               <Grid className="button02" style={{ marginLeft: "110px" }}>
                 <Button className="button02_field" style={{ color: "white" }}>
                   Reset
@@ -175,9 +190,11 @@ function ManCont() {
             <Table stickyHeader>
               <TableHead style={{ background: "transparent" }}>
                 <TableRow>
-                  <TableCell style={{ width: "2px" }}>S.No</TableCell>
+                  <TableCell style={{ width: "2px" }}>
+                    <Typography variant="body2">S.No</Typography>
+                  </TableCell>
                   <TableCell className="thead">
-                    Full Name
+                    <Typography variant="body2">Full Name</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -190,7 +207,7 @@ function ManCont() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    CONT ID
+                    <Typography variant="body2">CONT ID</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -203,7 +220,7 @@ function ManCont() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    Phone Number
+                    <Typography variant="body2">Phone Number</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -216,7 +233,7 @@ function ManCont() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    Email Address
+                    <Typography variant="body2">Email Address</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -229,7 +246,7 @@ function ManCont() {
                     />
                   </TableCell>
                   <TableCell className="thead">
-                    Address
+                    <Typography variant="body2">Address</Typography>
                     <img
                       src={GA}
                       alt=""
@@ -242,7 +259,7 @@ function ManCont() {
                     />
                   </TableCell>
                   <TableCell style={{ marginRight: "180px" }} className="thead">
-                    Actions
+                    <Typography variant="body2">Actions</Typography>
                   </TableCell>
                 </TableRow>
               </TableHead>

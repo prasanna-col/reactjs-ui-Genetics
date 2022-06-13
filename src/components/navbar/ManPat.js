@@ -1,45 +1,83 @@
-import React from 'react'
-import { Grid , InputBase , Button , Table , TableRow , TableCell , TableHead , TableBody } from '@material-ui/core'
-import "../../App.css"
-import GA from '../img&Logos/GroupArrow.png'
-import calendar from  '../img&Logos/calendar.png'
-import Rforms from '../../ManPat.json';
-import ReactPaginate from 'react-paginate'
-
-
+import React from "react";
+import {
+  Grid,
+  InputBase,
+  Button,
+  Table,
+  TableRow,
+  TableCell,
+  TableHead,
+  TableBody,
+  Typography,
+} from "@material-ui/core";
+import "../../App.css";
+import GA from "../img&Logos/GroupArrow.png";
+import calendar from "../img&Logos/calendar.png";
+import Rforms from "../../ManPat.json";
+import ReactPaginate from "react-paginate";
 
 function ManPat() {
+  const [datas, setdatas] = React.useState(Rforms.slice(0, 20));
+  const [pageNumber, setPageNumber] = React.useState(0);
 
-    const[datas , setdatas] = React.useState(Rforms.slice(0,20));
-    const[pageNumber , setPageNumber] = React.useState(0);
+  const datasPerPage = 10;
+  const pageVisited = pageNumber * datasPerPage;
 
-    const datasPerPage = 10;
-    const pageVisited =pageNumber * datasPerPage;
-
-    const dispData = datas.slice(pageVisited, pageVisited+datasPerPage).map((data)=>{
-        return(
-            <TableRow>
-                <TableCell >{data.id}</TableCell>
-                <TableCell>{data.date}</TableCell>
-                <TableCell>{data.patId}</TableCell>
-                <TableCell>{data.patName}</TableCell>
-                <TableCell>{data.gender}</TableCell>
-                <TableCell>{data.phNUm}</TableCell>
-                <TableCell className="statuss" ><div className='status' style={{background:data.background,width:'180px'}}><div style={{left:"3px", position:'relative', top:'2px' , color:'white', textAlign:"center"}}>{data.status}</div></div></TableCell>
-            </TableRow>
-        )
+  const dispData = datas
+    .slice(pageVisited, pageVisited + datasPerPage)
+    .map((data) => {
+      return (
+        <TableRow>
+          <TableCell>
+            <Typography variant="subtitle1">{data.id}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.date}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.patId}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.patName}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.gender}</Typography>
+          </TableCell>
+          <TableCell>
+            <Typography variant="subtitle1">{data.phNUm}</Typography>
+          </TableCell>
+          <TableCell className="statuss">
+            <div
+              className="status"
+              style={{ background: data.background, width: "180px" }}
+            >
+              <div
+                style={{
+                  left: "3px",
+                  position: "relative",
+                  top: "-1px",
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                <Typography variant="subtitle1">{data.status}</Typography>
+              </div>
+            </div>
+          </TableCell>
+        </TableRow>
+      );
     });
 
-    const pageCount = Math.ceil(datas.length/datasPerPage)
+  const pageCount = Math.ceil(datas.length / datasPerPage);
 
-    const pageChange = ({selected}) =>{
-        setPageNumber(selected);
-    }
+  const pageChange = ({ selected }) => {
+    setPageNumber(selected);
+  };
 
-    return ( 
-        <div className="content">
-         <div className="C_heading">
-        <h2 
+  return (
+    <div className="content">
+      <div className="C_heading">
+        <h2
           style={{
             marginTop: "10px",
             width: "1880px",
@@ -58,7 +96,7 @@ function ManPat() {
       <Grid container spacing={5}>
         <div className="fields">
           <Grid className="select" style={{ marginLeft: "10px" }}>
-          <select
+            <select
               placeholder="Select Role"
               style={{ left: "30px" }}
               className="id_field"
@@ -89,14 +127,18 @@ function ManPat() {
               <option value="003">003</option>
             </select>
           </Grid>
-          
+
           <Grid className="namee" style={{ marginLeft: "655px" }}>
             <InputBase
               placeholder="Submission Date"
-              style={{ left: "30px",top:'10px' }}
+              style={{ left: "30px", top: "10px" }}
               className="name_field"
             />
-            <img src={calendar} alt='' style={{position:"absolute",left:"250px",top:"13px"}}/>
+            <img
+              src={calendar}
+              alt=""
+              style={{ position: "absolute", left: "250px", top: "13px" }}
+            />
           </Grid>
 
           <Grid className="id" style={{ marginLeft: "660px" }}>
@@ -123,102 +165,96 @@ function ManPat() {
               Reset
             </Button>
           </Grid>
-
-         
         </div>
-        </Grid> 
+      </Grid>
 
-        <div className="form">
-      
-    
-          <Table stickyHeader >
-          <TableHead style={{background:'transparent'}} >
+      <div className="form">
+        <Table stickyHeader>
+          <TableHead style={{ background: "transparent" }}>
             <TableRow>
-               
-               <TableCell style={{width:'2px'}}>S.No</TableCell>
-               <TableCell className="thead">
-                 Date
-                 <img
-                   src={GA}
-                   alt=""
-                   style={{ position: "absolute", left: "140px", top: "20px" }}
-                   className="groupArrow"
-                 />
-               </TableCell>
-               <TableCell className="thead">
-                 Patient ID
-                 <img
-                   src={GA}
-                   alt=""
-                   style={{ position: "absolute", left: "120px", top: "20px" }}
-                   className="groupArrow"
-                 />
-               </TableCell>
-               <TableCell className="thead">
-                 Patient Name
-                 <img
-                   src={GA}
-                   alt=""
-                   style={{ position: "absolute", left: "140px", top: "20px" }}
-                   className="groupArrow"
-                 />
-               </TableCell>
-               <TableCell className="thead">
-                 Gender
-                 <img
-                   src={GA}
-                   alt=""
-                   style={{
-                     position: "absolute",
-                     left: "135px",
-                     top: "20px",
-                   }}
-                   className="groupArrow"
-                   
-                 />
-               </TableCell>
-               <TableCell className="thead">
-                 Phone Number
-                 <img
-                   src={GA}
-                   alt=""
-                   style={{
-                     position: "absolute",
-                     left: "200px",
-                     top: "20px",
-                   }}
-                   className="groupArrow"
-                 />
-               </TableCell>
+              <TableCell style={{ width: "2px" }}>
+                <Typography variant="body2">S.No</Typography>
+              </TableCell>
+              <TableCell className="thead">
+                <Typography variant="body2">Date</Typography>
+                <img
+                  src={GA}
+                  alt=""
+                  style={{ position: "absolute", left: "140px", top: "20px" }}
+                  className="groupArrow"
+                />
+              </TableCell>
+              <TableCell className="thead">
+                <Typography variant="body2">Patient ID</Typography>
+                <img
+                  src={GA}
+                  alt=""
+                  style={{ position: "absolute", left: "120px", top: "20px" }}
+                  className="groupArrow"
+                />
+              </TableCell>
+              <TableCell className="thead">
+                <Typography variant="body2">Patient Name</Typography>
+                <img
+                  src={GA}
+                  alt=""
+                  style={{ position: "absolute", left: "140px", top: "20px" }}
+                  className="groupArrow"
+                />
+              </TableCell>
+              <TableCell className="thead">
+                <Typography variant="body2">Gender</Typography>
+                <img
+                  src={GA}
+                  alt=""
+                  style={{
+                    position: "absolute",
+                    left: "135px",
+                    top: "20px",
+                  }}
+                  className="groupArrow"
+                />
+              </TableCell>
+              <TableCell className="thead">
+                <Typography variant="body2">Phone Number</Typography>
+                <img
+                  src={GA}
+                  alt=""
+                  style={{
+                    position: "absolute",
+                    left: "200px",
+                    top: "20px",
+                  }}
+                  className="groupArrow"
+                />
+              </TableCell>
 
-            
+              <TableCell
+                style={{ width: "160px", textAlign: "center" }}
+                className="thead"
+              >
+                <Typography variant="body2">Status</Typography>
+              </TableCell>
+            </TableRow>
+          </TableHead>
 
-               
-               <TableCell style={{width:"160px", textAlign:'center'}} className="thead">Status</TableCell>
+          <TableBody>{dispData}</TableBody>
+        </Table>
+      </div>
 
-             </TableRow>
-            </TableHead>
-              
-            <TableBody>{dispData}</TableBody>
-         
-          </Table>
-      
-        </div>  
-
-             <ReactPaginate
-                previousLabel={"<"}
-                nextLabel={">"}
-                pageCount={pageCount}
-                onPageChange={pageChange}
-                containerClassName={"paginationBttns"}
-                previousLinkClassName={"previousBttn"}
-                nextLinkClassName={"nextBttn"}
-                disabledClassName={"paginationDisabled"}
-                activeClassName={"paginationActive"}                                        
-             />
-
-        </div>
-     );
+      <ReactPaginate
+        previousLabel={"<"}
+        nextLabel={">"}
+        pageCount={pageCount}
+        onPageChange={pageChange}
+        containerClassName={"paginationBttns"}
+        previousLinkClassName={"previousBttn"}
+        nextLinkClassName={"nextBttn"}
+        disabledClassName={"paginationDisabled"}
+        activeClassName={"paginationActive"}
+      />
+    </div>
+  );
 }
 
 export default ManPat;
