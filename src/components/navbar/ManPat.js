@@ -95,7 +95,7 @@ function ManPat() {
       </div>
       <Grid container spacing={5}>
         <div className="fields">
-          <Grid className="select" style={{ marginLeft: "10px" }}>
+          <Grid className="select" style={{ marginLeft: "1px" }}>
             <select
               placeholder="Select Role"
               style={{ left: "30px" }}
@@ -107,7 +107,7 @@ function ManPat() {
               <option value="003">003</option>
             </select>
           </Grid>
-          <Grid className="namee" style={{ marginLeft: "20px" }}>
+          <Grid className="namee" style={{ marginLeft: "1px" }}>
             <InputBase
               placeholder="Patient Name"
               style={{ left: "30px" }}
@@ -115,7 +115,7 @@ function ManPat() {
             />
           </Grid>
 
-          <Grid className="id" style={{ marginLeft: "30px" }}>
+          <Grid className="id" style={{ marginLeft: "1px" }}>
             <select
               placeholder="Constractor"
               style={{ left: "30px" }}
@@ -128,7 +128,7 @@ function ManPat() {
             </select>
           </Grid>
 
-          <Grid className="namee" style={{ marginLeft: "655px" }}>
+          <Grid className="namee" style={{ marginLeft: "625px" }}>
             <InputBase
               placeholder="Submission Date"
               style={{ left: "30px", top: "10px" }}
@@ -141,7 +141,7 @@ function ManPat() {
             />
           </Grid>
 
-          <Grid className="id" style={{ marginLeft: "660px" }}>
+          <Grid className="id" style={{ marginLeft: "630px" }}>
             <select
               placeholder="Status"
               style={{ left: "30px" }}
@@ -154,13 +154,13 @@ function ManPat() {
             </select>
           </Grid>
 
-          <Grid className="button01" style={{ marginLeft: "350px" }}>
+          <Grid className="button01" style={{ marginLeft: "320px" }}>
             <Button className="button01_field" style={{ color: "white" }}>
               filter
             </Button>
           </Grid>
 
-          <Grid className="button02" style={{ marginLeft: "350px" }}>
+          <Grid className="button02" style={{ marginLeft: "320px" }}>
             <Button className="button02_field" style={{ color: "white" }}>
               Reset
             </Button>

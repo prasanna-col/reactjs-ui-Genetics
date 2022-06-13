@@ -156,7 +156,7 @@ function Medical() {
                   <Typography variant="body1">Fax Number</Typography>
                   <Typography
                     variant="body2"
-                    style={{ marginLeft: 160, width: 250 }}
+                    style={{ marginLeft: 100, width: 250 }}
                   >
                     {physicain.fax_number}
                   </Typography>
@@ -322,7 +322,7 @@ function Medical() {
 
                 <Grid container item xs={6} sm={4}>
                   <Typography variant="body1">City</Typography>
-                  <Typography variant="body2" style={{ marginLeft: 150 }}>
+                  <Typography variant="body2" style={{ marginLeft: 175 }}>
                     {physicain.city}
                   </Typography>
                 </Grid>
@@ -346,7 +346,7 @@ function Medical() {
                   <Typography variant="body1">Zip Code</Typography>
                   <Typography
                     variant="body2"
-                    style={{ marginLeft: 120, width: 250 }}
+                    style={{ marginLeft: 140, width: 250 }}
                   >
                     {physicain.zip_code}
                   </Typography>
@@ -374,7 +374,7 @@ function Medical() {
                   <Typography variant="body1">Best Time to Call</Typography>
                   <Typography
                     variant="body2"
-                    style={{ marginLeft: 60, width: 250 }}
+                    style={{ marginLeft: 90, width: 250 }}
                   >
                     {physicain.best_time}
                   </Typography>
@@ -394,7 +394,9 @@ function Medical() {
                 <Ethnicity />
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: 10 }}>
-                  <Typography variant="body1">Insurance Information *</Typography>
+                  <Typography variant="body1">
+                    Insurance Information *
+                  </Typography>
                 </Grid>
 
                 <Insurance />
