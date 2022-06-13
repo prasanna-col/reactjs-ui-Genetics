@@ -7,7 +7,8 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import family from "../../../Json/Family.json"
+import family from "../../../Json/Family.json";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
   table: {
@@ -29,7 +30,6 @@ function FamilyTable() {
         marginBottom: 30,
       }}
     >
-      
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -44,12 +44,20 @@ function FamilyTable() {
           {family.map((row, index) => (
             <TableRow key={index} style={{ backgroundColor: "#fff" }}>
               <TableCell component="th" scope="row" style={{ marginLeft: 22 }}>
-                {row.family_type}
+                <Typography variant="subtitle1">{row.family_type}</Typography>
               </TableCell>
-              <TableCell>{row.relation}</TableCell>
-              <TableCell>{row.name}</TableCell>
-              <TableCell>{row.cancer_type}</TableCell>
-              <TableCell>{row.age}</TableCell>
+              <TableCell>
+                <Typography variant="subtitle1">{row.relation}</Typography>
+              </TableCell>
+              <TableCell>
+                <Typography variant="subtitle1">{row.name}</Typography>
+              </TableCell>
+              <TableCell>
+                <Typography variant="subtitle1">{row.cancer_type}</Typography>
+              </TableCell>
+              <TableCell>
+                <Typography variant="subtitle1">{row.age}</Typography>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

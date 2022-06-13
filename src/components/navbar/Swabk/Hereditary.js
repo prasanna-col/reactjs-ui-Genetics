@@ -74,80 +74,90 @@ function Medical() {
             <div className={classes.bannerButtom}>
               <Grid container spacing={2}>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Health System</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Health System</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.health_system}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Practice Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Practice Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.practice_name}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Physicain Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Physicain Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.phyician_name}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>License #</Typography>
-                  <Typography style={{ marginLeft: 110 }}>
+                  <Typography variant="body1">License #</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 110 }}>
                     {physicain.license}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>NPI #</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">NPI #</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {physicain.npi}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Phone Number</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Phone Number</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.phone}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Address</Typography>
-                  <Typography style={{ marginLeft: 120, width: 250 }}>
+                  <Typography variant="body1">Address</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 120, width: 250 }}
+                  >
                     {physicain.Address}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>State</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">State</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {physicain.State}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Email Address</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Email Address</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.email}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography></Typography>
+                  <Typography variant="body1"></Typography>
                   <Typography
+                    variant="body2"
                     style={{ marginLeft: 120, width: 250 }}
                   ></Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography>City</Typography>
-                  <Typography style={{ marginLeft: 160, width: 250 }}>
+                  <Typography variant="body1">City</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 160, width: 250 }}
+                  >
                     {physicain.city}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography>Fax Number</Typography>
-                  <Typography style={{ marginLeft: 160, width: 250 }}>
+                  <Typography variant="body1">Fax Number</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 160, width: 250 }}
+                  >
                     {physicain.fax_number}
                   </Typography>
                 </Grid>
@@ -164,80 +174,90 @@ function Medical() {
             <div className={classes.bannerButtom}>
               <Grid container spacing={2}>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Health System</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Health System</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.health_system}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Practice Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Practice Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.practice_name}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Physicain Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Physicain Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.phyician_name}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>License #</Typography>
-                  <Typography style={{ marginLeft: 110 }}>
+                  <Typography variant="body1">License #</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 110 }}>
                     {physicain.license}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>NPI #</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">NPI #</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {physicain.npi}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Phone Number</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Phone Number</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.phone}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Address</Typography>
-                  <Typography style={{ marginLeft: 120, width: 250 }}>
+                  <Typography variant="body1">Address</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 120, width: 250 }}
+                  >
                     {physicain.Address}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>State</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">State</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {physicain.State}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Email Address</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Email Address</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.email}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography></Typography>
+                  <Typography variant="body1"></Typography>
                   <Typography
+                    variant="body2"
                     style={{ marginLeft: 120, width: 250 }}
                   ></Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography>City</Typography>
-                  <Typography style={{ marginLeft: 160, width: 250 }}>
+                  <Typography variant="body1">City</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 160, width: 250 }}
+                  >
                     {physicain.city}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography>Fax Number</Typography>
-                  <Typography style={{ marginLeft: 160, width: 250 }}>
+                  <Typography variant="body1">Fax Number</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 100, width: 250 }}
+                  >
                     {physicain.fax_number}
                   </Typography>
                 </Grid>
@@ -254,112 +274,127 @@ function Medical() {
             <div className={classes.bannerButtom}>
               <Grid container spacing={2}>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Last Name</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">Last Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {patient.lastName}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>First Name</Typography>
-                  <Typography style={{ marginLeft: 120 }}>
+                  <Typography variant="body1">First Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 120 }}>
                     {patient.firstName}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Mi</Typography>
-                  <Typography style={{ marginLeft: 180 }}>
+                  <Typography variant="body1">Mi</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 180 }}>
                     {physicain.mi}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>DOB</Typography>
-                  <Typography style={{ marginLeft: 190 }}>
+                  <Typography variant="body1">DOB</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 190 }}>
                     {patient.dob}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Gender</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">Gender</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {patient.gender}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Phone Number</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Phone Number</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.phone}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Patient Address</Typography>
-                  <Typography style={{ marginLeft: 110, width: 250 }}>
+                  <Typography variant="body1">Patient Address</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 110, width: 250 }}
+                  >
                     {physicain.Address}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>City</Typography>
-                  <Typography style={{ marginLeft: 150 }}>
+                  <Typography variant="body1">City</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 150 }}>
                     {physicain.city}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Email Address</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Email Address</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.email}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography></Typography>
+                  <Typography variant="body1"></Typography>
                   <Typography
+                    variant="body2"
                     style={{ marginLeft: 120, width: 250 }}
                   ></Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography>Zip Code</Typography>
-                  <Typography style={{ marginLeft: 120, width: 250 }}>
+                  <Typography variant="body1">Zip Code</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 120, width: 250 }}
+                  >
                     {physicain.zip_code}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography>State</Typography>
-                  <Typography style={{ marginLeft: 160, width: 250 }}>
+                  <Typography variant="body1">State</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 160, width: 250 }}
+                  >
                     {physicain.State}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography></Typography>
+                  <Typography variant="body1"></Typography>
                   <Typography
+                    variant="body2"
                     style={{ marginLeft: 120, width: 250 }}
                   ></Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -10 }}>
-                  <Typography>Best Time to Call</Typography>
-                  <Typography style={{ marginLeft: 60, width: 250 }}>
+                  <Typography variant="body1">Best Time to Call</Typography>
+                  <Typography
+                    variant="body2"
+                    style={{ marginLeft: 60, width: 250 }}
+                  >
                     {physicain.best_time}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: -40 }}>
-                  <Typography></Typography>
+                  <Typography variant="body1"></Typography>
                   <Typography
+                    variant="body2"
                     style={{ marginLeft: 160, width: 250 }}
                   ></Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: 0 }}>
-                  <Typography>Ethnicity</Typography>
+                  <Typography variant="body1">Ethnicity</Typography>
                 </Grid>
                 <Ethnicity />
 
                 <Grid container item xs={6} sm={4} style={{ marginTop: 10 }}>
-                  <Typography>Insurance Information</Typography>
+                  <Typography variant="body1">Insurance Information *</Typography>
                 </Grid>
 
                 <Insurance />

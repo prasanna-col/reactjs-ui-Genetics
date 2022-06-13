@@ -18,30 +18,27 @@ function Insurance() {
         }}
       >
         <Grid style={{ display: "flex" }}>
-          <Typography style={{ width: 400, fontWeight: "bold", fontSize: 14 }}>
+          <Typography variant="body2" style={{ fontSize: 14, width: 400 }}>
             Primary Insurance
           </Typography>
 
-          <label style={{ fontSize: 14 }}>Insurance Type</label>
+          <Typography variant="subtitle1">Insurance Type</Typography>
 
           <Typography
+            variant="body2"
             style={{
               width: 400,
-              fontWeight: "bold",
-              fontSize: 14,
               marginLeft: 30,
             }}
           >
             Commercial
           </Typography>
-
-          <label style={{ fontSize: 14 }}>Policy #</label>
+          <Typography variant="subtitle1">Policy #</Typography>
 
           <Typography
+            variant="body2"
             style={{
               width: 400,
-              fontWeight: "bold",
-              fontSize: 14,
               marginLeft: 30,
             }}
           >
@@ -53,45 +50,46 @@ function Insurance() {
 
         <Grid style={{ display: "flex", marginTop: 20 }}>
           <Grid style={{ display: "flex" }}>
-            <Typography
-              style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-            >
+            <Typography Typography="body2" style={{ width: 400 }}>
               Secondary Insurance
             </Typography>
 
-            <label style={{ fontSize: 14, width: 300 }}>Insurance Type</label>
+            <Typography variant="subtitle1" style={{ width: 300 }}>
+              Insurance Type
+            </Typography>
 
             <Typography
+              variant="body2"
               style={{
                 width: 400,
-                fontWeight: "bold",
-                fontSize: 14,
                 marginLeft: -180,
               }}
             >
               Not Applicable
             </Typography>
 
-            <label style={{ fontSize: 14, width: 50 }}>Policy #</label>
+            <Typography variant="subtitle1" style={{ width: 60 }}>
+              Policy #
+            </Typography>
 
             <Typography
+              variant="body2"
               style={{
                 width: 400,
-                fontWeight: "bold",
-                fontSize: 14,
                 marginLeft: 30,
               }}
             >
               000423663482
             </Typography>
 
-            <label style={{ fontSize: 14, width: 190 }}>Red Asterisk</label>
+            <Typography variant="subtitle1" style={{ width: 190 }}>
+              Red Asterisk
+            </Typography>
 
             <Typography
+              variant="body2"
               style={{
                 width: 400,
-                fontWeight: "bold",
-                fontSize: 14,
                 marginLeft: -80,
               }}
             >

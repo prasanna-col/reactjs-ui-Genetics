@@ -89,10 +89,10 @@ function PatientConsent() {
             <Grid className={classes.aceBanner}>
               <Grid>
                 <Typography
+                  variant="body2"
                   style={{
                     width: "80%",
                     fontWeight: "bold",
-                    fontSize: 15,
                     lineHeight: 2,
                   }}
                 >
@@ -225,7 +225,7 @@ function PatientConsent() {
               <Grid item xs={8} sm={2}>
                 <Paper elevation={0} className={classes.imgPaper}>
                   <img src={signature} width={200} height={80} />
-                  <Typography className={classes.signature}>
+                  <Typography variant="body1" className={classes.signature}>
                     Patient Signature
                   </Typography>
                 </Paper>
@@ -233,6 +233,7 @@ function PatientConsent() {
               <Grid item xs={8} sm={2}>
                 <Paper elevation={0} className={classes.date}>
                   <Typography
+                    variant="subtitle1"
                     className={classes.dateText}
                     style={{ color: "#000" }}
                   >
@@ -253,32 +254,34 @@ function PatientConsent() {
             <div className={classes.bannerButtom}>
               <Grid container spacing={2}>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Agent Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Agent Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {patient.firstName} {patient.lastName}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Agent #</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Agent #</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.npi}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Agent Email</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Agent Email</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.email}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Agent Phone</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Agent Phone</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {physicain.phone}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Submitted by</Typography>
-                  <Typography style={{ marginLeft: 50 }}>Contractor</Typography>
+                  <Typography variant="body1">Submitted by</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 50 }}>
+                    Contractor
+                  </Typography>
                 </Grid>
               </Grid>
             </div>
@@ -295,16 +298,15 @@ function PatientConsent() {
             </Grid>
 
             <Grid style={{ display: "flex", marginTop: 20, marginLeft: 50 }}>
-              <label style={{ width: 400, fontSize: 14 }}>
+              <Typography variant="body1" style={{ width: 400 }}>
                 Where would you like the Test Kit to be shipped?
-              </label>
+              </Typography>
 
               <Typography
+                variant="body2"
                 style={{
                   width: 400,
-                  fontWeight: "bold",
-                  fontSize: 14,
-                  marginLeft: -80,
+                  marginLeft: -60,
                 }}
               >
                 Home

@@ -31,10 +31,6 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: 140,
   },
-  title: {
-    fontSize: 14,
-    fontWeight: "bold",
-  },
 }));
 
 function PhotoID() {
@@ -52,7 +48,7 @@ function PhotoID() {
                 title="Medicare Card"
               />
               <CardContent style={{ backgroundColor: "#F4F9FB" }}>
-                <Typography gutterBottom variant="p" className={classes.title}>
+                <Typography gutterBottom variant="body2">
                   Medicare Card.jpeg
                 </Typography>
               </CardContent>
@@ -68,7 +64,7 @@ function PhotoID() {
                 title="Medicare Card"
               />
               <CardContent style={{ backgroundColor: "#F4F9FB" }}>
-                <Typography gutterBottom variant="p" className={classes.title}>
+                <Typography gutterBottom variant="body2">
                    Secondary Insurance Card.jpeg
                 </Typography>
               </CardContent>
@@ -84,7 +80,7 @@ function PhotoID() {
                 title="Medicare Card"
               />
               <CardContent style={{ backgroundColor: "#F4F9FB" }}>
-                <Typography gutterBottom variant="p" className={classes.title}>
+                <Typography gutterBottom variant="body2">
                   Photo ID Card.jpeg
                 </Typography>
               </CardContent>

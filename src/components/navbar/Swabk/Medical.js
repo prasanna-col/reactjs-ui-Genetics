@@ -70,147 +70,131 @@ function Medical() {
             <div className={classes.bannerButtom}>
               <Grid container spacing={2}>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Last Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Last Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {patient.lastName}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>First Name</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">First Name</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {patient.firstName}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>DOB</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">DOB</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {patient.dob}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Gender</Typography>
-                  <Typography style={{ marginLeft: 100 }}>
+                  <Typography variant="body1">Gender</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 100 }}>
                     {patient.gender}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Phone Number</Typography>
-                  <Typography style={{ marginLeft: 50 }}>
+                  <Typography variant="body1">Phone Number</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 50 }}>
                     {patient.phone}
                   </Typography>
                 </Grid>
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Email</Typography>
-                  <Typography style={{ marginLeft: 80 }}>
+                  <Typography variant="body1">Email</Typography>
+                  <Typography variant="body2" style={{ marginLeft: 80 }}>
                     {patient.email}
                   </Typography>
                 </Grid>
 
                 <Grid container item xs={6} sm={4}>
-                  <Typography>Status</Typography>
+                  <Typography variant="body1">Status</Typography>
                 </Grid>
                 <Grid item xs={12}>
                   <Grid className={classes.aceBanner}>
                     <Grid style={{ display: "flex" }}>
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Dr. Approval Pending
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Doctor Approved
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Test Accpeted
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Test on Hold
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Test Shipped to Lab
                       </Typography>
                     </Grid>
 
                     <Grid style={{ display: "flex", marginTop: 20 }}>
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         20/02/2020
-                      </label>
+                      </Typography>
 
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         20/02/2020
-                      </label>
+                      </Typography>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
+                        20/02/2020
+                      </Typography>
 
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         20/02/2020
-                      </label>
-
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      </Typography>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         20/02/2020
-                      </label>
-                      <label style={{ width: 400, fontSize: 14 }}>
-                        20/02/2020
-                      </label>
+                      </Typography>
                     </Grid>
                     <Divider style={{ marginTop: 20, marginBottom: 20 }} />
 
                     <Grid style={{ display: "flex" }}>
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Test Received by Lab
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Test Inprocess at Lab
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Test Resulted
                       </Typography>
 
-                      <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
-                      >
+                      <Typography variant="body2" style={{ width: 400 }}>
                         Paid
                       </Typography>
                       <Typography
-                        style={{ width: 400, fontWeight: "bold", fontSize: 14 }}
+                        variant="body2"
+                        style={{ width: 400 }}
                       ></Typography>
                     </Grid>
 
                     <Grid style={{ display: "flex", marginTop: 20 }}>
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         25/02/2020
-                      </label>
+                      </Typography>
 
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         26/02/2020
-                      </label>
+                      </Typography>
 
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         27/02/2020
-                      </label>
+                      </Typography>
 
-                      <label style={{ width: 400, fontSize: 14 }}>
+                      <Typography style={{ width: 400, fontSize: 14 }}>
                         28/02/2020
-                      </label>
-                      <label style={{ width: 400, fontSize: 14 }}></label>
+                      </Typography>
+                      <Typography
+                        style={{ width: 400, fontSize: 14 }}
+                      ></Typography>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -224,11 +208,12 @@ function Medical() {
                 <Grid
                   style={{ display: "flex", marginTop: 20, marginLeft: 60 }}
                 >
-                  <label style={{ width: 400, fontSize: 14 }}>
+                  <Typography style={{ width: 400, fontSize: 14 }}>
                     Have you ever been diagnosed with cancer
-                  </label>
+                  </Typography>
 
                   <Typography
+                    variant="body2"
                     style={{
                       width: 400,
                       fontWeight: "bold",
@@ -239,11 +224,14 @@ function Medical() {
                     36
                   </Typography>
 
-                  <label style={{ width: 400, fontSize: 14, marginLeft: -300 }}>
+                  <Typography
+                    style={{ width: 400, fontSize: 14, marginLeft: -300 }}
+                  >
                     Do you have any Ashkenazi jewish Ancestry
-                  </label>
+                  </Typography>
 
                   <Typography
+                    variant="body2"
                     style={{
                       width: 400,
                       fontWeight: "bold",
@@ -258,11 +246,12 @@ function Medical() {
                 <Grid
                   style={{ display: "flex", marginTop: 20, marginLeft: 60 }}
                 >
-                  <label style={{ width: 400, fontSize: 14 }}>
+                  <Typography style={{ width: 400, fontSize: 14 }}>
                     Do you have a personal history of Colan Polyps
-                  </label>
+                  </Typography>
 
                   <Typography
+                    variant="body2"
                     style={{
                       width: 400,
                       fontWeight: "bold",
@@ -279,13 +268,16 @@ function Medical() {
                   xs={12}
                   style={{ display: "flex", marginTop: 20, marginLeft: 50 }}
                 >
-                  <label style={{ width: 400, fontSize: 14, lineHeight: 2 }}>
+                  <Typography
+                    style={{ width: 400, fontSize: 14, lineHeight: 2 }}
+                  >
                     Have you ever been tested for a DNA cancer
                     <br />
                     screening in your lifetime?
-                  </label>
+                  </Typography>
 
                   <Typography
+                    variant="body2"
                     style={{
                       width: 400,
                       fontWeight: "bold",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 function Ethnicity() {
   return (
@@ -18,15 +18,14 @@ function Ethnicity() {
         }}
       >
         <Grid style={{ display: "flex" }}>
-          <Typography style={{ width: 400, fontWeight: "bold", fontSize: 14 }}>
+          <Typography style={{ width: 400 }} variant="body2">
             Hispanic/ Latin American
           </Typography>
 
           <Typography
+            variant="body2"
             style={{
               width: 400,
-              fontWeight: "bold",
-              fontSize: 14,
               marginLeft: -130,
             }}
           >
@@ -34,10 +33,9 @@ function Ethnicity() {
           </Typography>
 
           <Typography
+            variant="body2"
             style={{
               width: 400,
-              fontWeight: "bold",
-              fontSize: 14,
               marginLeft: -130,
             }}
           >
@@ -45,10 +43,9 @@ function Ethnicity() {
           </Typography>
 
           <Typography
+            variant="body2"
             style={{
               width: 400,
-              fontWeight: "bold",
-              fontSize: 14,
               marginLeft: -130,
             }}
           >
@@ -56,10 +53,9 @@ function Ethnicity() {
           </Typography>
 
           <Typography
+            variant="body2"
             style={{
               width: 400,
-              fontWeight: "bold",
-              fontSize: 14,
               marginLeft: -130,
             }}
           >
