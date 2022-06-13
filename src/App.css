@@ -1,3 +1,7 @@
+html {
+    background-color: #F4F9FB;
+}
+
 .namee {
     position: absolute;
     width: 300px;
@@ -301,3 +305,49 @@ text-align: center !important;
     height: 400px;
     padding: 4px;
 }
+
+.ulist {
+    list-style-type: none;
+  }
+  .ulist .llist { 
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 40px
+  }
+  
+  .ulist .llist::before {
+    background-color: #14CCBB;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .inormalList {
+    list-style-type: none;
+  }
+  .normalList {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    height: 10px;
+    width: 10px;
+  }
+
+  .inormalList .normalList { 
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 40px
+  }
+  .inormalList .normalList::before {
+    content: "";
+    display: inline-block;
+  
+    margin-bottom: 2px;
+    height: 10px;
+    width: 10px;
+  }

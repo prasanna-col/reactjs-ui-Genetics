@@ -7,9 +7,9 @@ function Ethnicity() {
       <Grid
         style={{
           background: "#F4F9FB",
-          marginLeft: 60,
+          marginLeft: 8,
           marginTop: 22,
-          width: "90%",
+          width: "112%",
           border: "1px solid #dcdcdc",
           borderWidth: 1,
           height: "20%",

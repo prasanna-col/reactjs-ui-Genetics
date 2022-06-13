@@ -12,6 +12,7 @@ import ManLab from "./components/navbar/ManLab";
 import ManPhy from "./components/navbar/ManPhy";
 import ManPat from "./components/navbar/ManPat";
 import SwabK from "./components/navbar/SwabK";
+import Footer from "./components/Footer/Footer";
 
 function RouterPage() {
   return (
@@ -33,6 +34,7 @@ function RouterPage() {
         <Route exact path="/SwabK" component={SwabK} />
         <Route exact path="/AddNewContractors" component={AddContractor} />
       </Switch>
+      <Footer/>
     </Router>
   );
 }
