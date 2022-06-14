@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(0),
   },
   bannerTop: {
-    width: "98%",
+    width: "99%",
     marginTop: theme.spacing(4),
     padding: theme.spacing(1.5),
     backgroundColor: "#F4F9FB",
