@@ -31,12 +31,12 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(4),
     padding: theme.spacing(1.5),
     backgroundColor: "#F4F9FB",
-    marginLeft: theme.spacing(3),
-    marginRight: theme.spacing(3),
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(2),
   },
   bannerButtom: {
     padding: theme.spacing(1.5),
-    marginLeft: theme.spacing(3),
+    marginLeft: theme.spacing(2),
     marginRight: theme.spacing(3),
   },
   aceBanner: {

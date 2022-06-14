@@ -23,8 +23,7 @@ function FamilyTable() {
     <TableContainer
       component={Paper}
       style={{
-        width: "97.5%",
-        marginLeft: 22,
+        width: "100%",
         marginTop: 5,
         backgroundColor: "#FDF7F1",
         marginBottom: 30,

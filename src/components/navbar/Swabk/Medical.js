@@ -21,24 +21,24 @@ const useStyles = makeStyles((theme) => ({
   },
   cardTitle: {
     color: "#000",
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(0),
   },
   bannerTop: {
+    width: "98%",
     marginTop: theme.spacing(4),
     padding: theme.spacing(1.5),
     backgroundColor: "#F4F9FB",
-    marginLeft: theme.spacing(3),
-    marginRight: theme.spacing(3),
   },
   bannerButtom: {
+    width: "98%",
     padding: theme.spacing(1.5),
-    marginLeft: theme.spacing(3),
+    marginLeft: theme.spacing(1),
     marginRight: theme.spacing(3),
   },
   aceBanner: {
     background: "#F4F9FB",
-    marginLeft: 20,
-    width: "90%",
+    marginLeft: 0,
+    width: "95%",
     border: "1px solid #dcdcdc",
     borderWidth: 1,
     height: "auto",
@@ -61,7 +61,7 @@ function Medical() {
         {/* family medical */}
         <Grid item xs={12}>
           <Paper className={classes.bodayPaper}>
-            <Grid item xs={12} className={classes.bannerTop}>
+            <Grid item xs={12} className={classes.bannerTop} style={{marginLeft: 10}}>
               <Typography variant="h6" className={classes.cardTitle}>
                 Patient Basic Detail
               </Typography>
@@ -198,15 +198,15 @@ function Medical() {
                     </Grid>
                   </Grid>
                 </Grid>
-                <Grid item xs={11}>
+                <Grid item xs={12}>
                   <Divider
                     style={{
-                      marginLeft: 30,
+                      marginLeft: 10,
                     }}
                   />
                 </Grid>
                 <Grid
-                  style={{ display: "flex", marginTop: 20, marginLeft: 60 }}
+                  style={{ display: "flex", marginTop: 20, marginLeft: 20 }}
                 >
                   <Typography style={{ width: 400, fontSize: 14 }}>
                     Have you ever been diagnosed with cancer
@@ -244,7 +244,7 @@ function Medical() {
                 </Grid>
 
                 <Grid
-                  style={{ display: "flex", marginTop: 20, marginLeft: 60 }}
+                  style={{ display: "flex", marginTop: 20, marginLeft: 20 }}
                 >
                   <Typography style={{ width: 400, fontSize: 14 }}>
                     Do you have a personal history of Colan Polyps
@@ -266,7 +266,7 @@ function Medical() {
                 <Grid
                   item
                   xs={12}
-                  style={{ display: "flex", marginTop: 20, marginLeft: 50 }}
+                  style={{ display: "flex", marginTop: 20, marginLeft: 15 }}
                 >
                   <Typography
                     style={{ width: 400, fontSize: 14, lineHeight: 2 }}

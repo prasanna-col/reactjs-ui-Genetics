@@ -317,10 +317,7 @@ text-align: center !important;
   }
   
   .ulist .llist::before {
-    background-color: #14CCBB;
     border-radius: 50%;
-    content: "";
-    display: inline-block;
     margin-right: 10px;
     margin-bottom: 2px;
     height: 10px;

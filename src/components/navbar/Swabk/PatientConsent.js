@@ -3,8 +3,18 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Divider, Typography } from "@material-ui/core";
+import {
+  Divider,
+  Typography,
+  Avatar,
+  ListItemText,
+  ListItemIcon,
+  List,
+  ListItem,
+} from "@material-ui/core";
+import StarIcon from "@material-ui/icons/Star";
 import signature from "../../img&Logos/sign.png";
+import blue_dot from "../../img&Logos/Ellipse_blue.png";
 import patconsent from "../../../Json/PatientConsent.json";
 import patient from "../../../Json/Patient.json";
 import physicain from "../../../Json/Physicain.json";
@@ -44,12 +54,20 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 20,
     marginTop: 22,
     width: "95%",
-    border: "1px solid #dcdcdc",
     borderWidth: 1,
     height: "4%",
     padding: "25px",
-    borderRadius: "10px",
   },
+  aceBanner2: {
+    background: "#F4F9FB",
+    marginLeft: theme.spacing(8),
+    marginTop: 22,
+    width: "90%",
+    borderWidth: 1,
+    height: "4%",
+    padding: "25px",
+  },
+  
   imgPaper: {
     padding: theme.spacing(1.2),
     border: "1px solid #D1D1D1",
@@ -59,6 +77,16 @@ const useStyles = makeStyles((theme) => ({
     color: "gray",
     marginTop: -16,
     marginLeft: 16,
+  },
+  dot: {
+    width: theme.spacing(1.5),
+    height: theme.spacing(1.5),
+    marginLeft: theme.spacing(5)
+  },
+  dotgray: {
+    width: theme.spacing(1.5),
+    height: theme.spacing(1.5),
+    marginLeft: theme.spacing(0.5)
   },
   date: {
     padding: theme.spacing(0),
@@ -113,24 +141,33 @@ function PatientConsent() {
                 (item, i) =>
                   i < 5 && (
                     <Grid key={i} style={{ marginTop: 10 }}>
-                      <ul className="ulist">
-                        <li className="llist" style={{ width: "95%" }}>
+                      {/* <ul className="ulist">
+                        <li className="llist" style={{ width: "90%" }}>
                           {" "}
                           <b>{item.title} - </b>{" "}
                           <label style={{ color: "gray" }}>
                             {item.description}
                           </label>
                         </li>
-                      </ul>
+                      </ul> */}
+                      <div style={{ display: "flex", marginTop: 20}}>
+                      <Avatar alt="Remy Sharp" src={blue_dot} className={classes.dot}/>
+                        <Typography style={{ width: "90%", lineHeight: "40px", marginLeft: 20, marginTop: -12}}>
+                          <b>{item.title} - </b>{" "}
+                          <label style={{ color: "gray" }}>
+                            {item.description}
+                          </label>
+                        </Typography>
+                      </div>
                       {item.id === 6 ? null : (
-                        <Divider style={{ marginLeft: 30 }} />
+                        <Divider style={{ marginLeft: 30, width: "97%", marginTop: 20 }} />
                       )}
                     </Grid>
                   )
               )}
             </div>
 
-            <Grid className={classes.aceBanner}>
+            <Grid className={classes.aceBanner2}>
               <Grid>
                 <Typography
                   style={{
@@ -138,7 +175,7 @@ function PatientConsent() {
                     fontWeight: "bold",
                     fontSize: 16,
                     lineHeight: 2,
-                    marginLeft: 28,
+                    marginLeft: 2,
                   }}
                 >
                   There are several types of genetic test results including:
@@ -150,17 +187,17 @@ function PatientConsent() {
                     (item, i) =>
                       i > 5 && (
                         <Grid key={i} style={{ marginTop: 10 }}>
-                          <ul className="ulist">
-                            <li className="llist" style={{ width: "95%" }}>
-                              {" "}
-                              <b>{item.title} - </b>{" "}
-                              <label style={{ color: "gray" }}>
-                                {item.description}
-                              </label>
-                            </li>
-                          </ul>
+                      <div style={{ display: "flex", marginTop: 20}}>
+                      <Avatar alt="Remy Sharp" src={blue_dot} className={classes.dotgray}/>
+                        <Typography style={{ width: "90%", lineHeight: "40px", marginLeft: 20, marginTop: -12}}>
+                          <b>{item.title} - </b>{" "}
+                          <label style={{ color: "gray" }}>
+                            {item.description}
+                          </label>
+                        </Typography>
+                      </div>
                           {item.id === 6 ? null : (
-                            <Divider style={{ marginLeft: 30 }} />
+                            <Divider style={{ marginLeft: 30, marginTop: 20,width: "97%" }} />
                           )}
                         </Grid>
                       )
@@ -174,20 +211,17 @@ function PatientConsent() {
                 (item, i) =>
                   i > 5 && (
                     <Grid key={i} style={{ marginTop: 10 }}>
-                      <ul className="ulist">
-                        <li className="llist" style={{ width: "95%" }}>
-                          {" "}
-                          <b>
-                            {item.id === 9 ? item.title : null}{" "}
-                            {item.id === 9 ? "-" : null}
-                          </b>{" "}
+                        <div style={{ display: "flex", marginTop: 20}}>
+                      <Avatar alt="Remy Sharp" src={blue_dot} className={classes.dot}/>
+                        <Typography style={{ width: "90%", lineHeight: "40px", marginLeft: 20, marginTop: -12}}>
+                          <b>{item.title} - </b>{" "}
                           <label style={{ color: "gray" }}>
                             {item.description}
                           </label>
-                        </li>
-                      </ul>
+                        </Typography>
+                      </div>
                       {item.id === 6 ? null : (
-                        <Divider style={{ marginLeft: 30 }} />
+                        <Divider style={{ marginLeft: 30, marginTop: 20, width: "97%" }} />
                       )}
                     </Grid>
                   )
@@ -252,7 +286,7 @@ function PatientConsent() {
             </Grid>
 
             <div className={classes.bannerButtom}>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} style={{marginLeft: 1}}>
                 <Grid container item xs={6} sm={4}>
                   <Typography variant="body1">Agent Name</Typography>
                   <Typography variant="body2" style={{ marginLeft: 80 }}>
@@ -297,7 +331,7 @@ function PatientConsent() {
               </Typography>
             </Grid>
 
-            <Grid style={{ display: "flex", marginTop: 20, marginLeft: 50 }}>
+            <Grid style={{ display: "flex", marginTop: 20, marginLeft: 45 }}>
               <Typography variant="body1" style={{ width: 400 }}>
                 Where would you like the Test Kit to be shipped?
               </Typography>
