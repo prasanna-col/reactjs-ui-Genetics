@@ -18,7 +18,7 @@ import { PATIENT_STATUS } from "../../graphql/Queries";
 
 function Dashboard() {
   const { data } = useQuery(PATIENT_STATUS);
-  console.log(data);
+  // console.log(data);
   return (
     <div className="dash_contents">
       <div className="content1">

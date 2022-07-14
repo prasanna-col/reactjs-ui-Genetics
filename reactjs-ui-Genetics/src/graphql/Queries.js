@@ -29,4 +29,49 @@ const PATIENT_STATUS = gql`
   }
 `;
 
-export { REGISTER, LOGIN, PATIENT_STATUS };
+const CREATE_CONTRACTOR = gql`
+  mutation Mutation($contractorInput: ContractorInput) {
+    contractorCreate(contractorInput: $contractorInput) {
+      username
+      ncpa
+    }
+  }
+`;
+
+const GET_CONTRACTOR = gql`
+  query {
+    contractors {
+      id
+      fullName
+      contractor_id
+      street_address
+      city
+      zip_code
+      partner_name
+      pharmacy_name
+      email_address
+      phone
+      username
+      state
+      ncpa
+      partner_id
+    }
+  }
+`;
+
+const DELETE_CONTRACTOR = gql`
+  mutation Mutation($contractorDelete: ContractorDelete) {
+    deleteContractor(contractorDelete: $contractorDelete) {
+      id
+      username
+    }
+  }
+`;
+export {
+  REGISTER,
+  LOGIN,
+  PATIENT_STATUS,
+  CREATE_CONTRACTOR,
+  GET_CONTRACTOR,
+  DELETE_CONTRACTOR,
+};

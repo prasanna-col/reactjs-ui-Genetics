@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../App.css";
 import {
   Button,
@@ -18,8 +18,8 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
+import { useQuery, useMutation } from "@apollo/client";
 import "../navbarCSS/manCont.css";
-import Paper from "@mui/material/Paper";
 import forms from "../../ManCont.json";
 import GA from "../img&Logos/GroupArrow.png";
 import view from "../../view.png";
@@ -29,8 +29,16 @@ import ReactPaginate from "react-paginate";
 import right from "../img&Logos/rightArrow.png";
 import AddContractor from "../Add/AddContractor";
 import RoleModal from "../Modals/RoleModal";
+import { GET_CONTRACTOR, DELETE_CONTRACTOR } from "../../graphql/Queries";
 
 function ManCont() {
+  const { data } = useQuery(GET_CONTRACTOR);
+  console.log(data);
+
+  const [deleteContractor, { loading, data: deletid, error }] = useMutation(
+    DELETE_CONTRACTOR,
+    { refetchQueries: [{ query: GET_CONTRACTOR }] }
+  );
   const [add, setAdd] = React.useState(false);
 
   const [open, setOpen] = React.useState(false);
@@ -39,34 +47,53 @@ function ManCont() {
     setAdd(true);
   };
 
-  const [users, setUsers] = React.useState(forms.slice(0, 20));
-  const [pageNumber, setPageNumber] = React.useState(0);
+  const [search, setsearch] = useState("");
+  const [offset, setOffset] = useState(0);
+  const [perPage] = useState(10);
 
-  const usersPerPage = 10;
-  const pageVisited = pageNumber * usersPerPage;
+  const handlePageClick = (e) => {
+    const selectedPage = e.selected;
+    setOffset(selectedPage);
+  };
 
-  const displayData = users
-    .slice(pageVisited, pageVisited + usersPerPage)
-    .map((data) => {
+  const offset1 = offset * perPage;
+  console.log(offset1);
+
+  const pageCount = Math.ceil(data?.contractors.length / perPage);
+
+  const displayData = data?.contractors
+    .slice(offset1, offset1 + perPage)
+    .filter((value) => {
+      if (search === !null) {
+        return value;
+      } else if (
+        value.email_address.toLowerCase().includes(search.toLowerCase())
+      ) {
+        return value;
+      } else if (value.fullName.toLowerCase().includes(search.toLowerCase())) {
+        return value;
+      }
+    })
+    .map((data, index) => {
       return (
-        <TableRow>
+        <TableRow key={index}>
           <TableCell>
-            <Typography variant="subtitle1">{data.id}</Typography>
+            <Typography variant="subtitle1">{index + 1}</Typography>
           </TableCell>
           <TableCell>
-            <Typography variant="subtitle1">{data.name}</Typography>
+            <Typography variant="subtitle1">{data?.fullName}</Typography>
           </TableCell>
           <TableCell>
-            <Typography variant="subtitle1">{data.CONT}</Typography>
+            <Typography variant="subtitle1">{data?.contractor_id}</Typography>
           </TableCell>
           <TableCell>
-            <Typography variant="subtitle1">{data.Phone}</Typography>
+            <Typography variant="subtitle1">{data?.phone}</Typography>
           </TableCell>
           <TableCell>
-            <Typography variant="subtitle1">{data.email}</Typography>
+            <Typography variant="subtitle1">{data?.email_address}</Typography>
           </TableCell>
           <TableCell>
-            <Typography variant="subtitle1">{data.address}</Typography>
+            <Typography variant="subtitle1">{data?.street_address}</Typography>
           </TableCell>
           <TableCell>
             <img src={view} alt="" />
@@ -77,6 +104,11 @@ function ManCont() {
               className="view_icon"
             />
             <img
+              onClick={async () => {
+                await deleteContractor({
+                  variables: { contractorDelete: { id: data?.id } },
+                });
+              }}
               src={del}
               alt=""
               style={{ marginLeft: "10px" }}
@@ -87,11 +119,11 @@ function ManCont() {
       );
     });
 
-  const pageCount = Math.ceil(users.length / usersPerPage);
+  // const pageCount = Math.ceil(users.length / usersPerPage);
 
-  const pageChange = ({ selected }) => {
-    setPageNumber(selected);
-  };
+  // const pageChange = ({ selected }) => {
+  //   setPageNumber(selected);
+  // };
 
   return (
     <div>
@@ -146,6 +178,9 @@ function ManCont() {
                   placeholder="Name"
                   style={{ left: "30px" }}
                   className="namefield"
+                  onChange={(e) => {
+                    setsearch(e.target.value);
+                  }}
                 />
               </Grid>
               <Grid className="id" style={{ marginLeft: "50px" }}>
@@ -166,6 +201,9 @@ function ManCont() {
                   placeholder="Email Address"
                   style={{ left: "30px" }}
                   className="email_field"
+                  onChange={(e) => {
+                    setsearch(e.target.value);
+                  }}
                 />
               </Grid>
 
@@ -284,7 +322,7 @@ function ManCont() {
             previousLabel={"<"}
             nextLabel={">"}
             pageCount={pageCount}
-            onPageChange={pageChange}
+            onPageChange={handlePageClick}
             containerClassName={"paginationBttns"}
             previousLinkClassName={"previousBttn"}
             nextLinkClassName={"nextBttn"}

@@ -3,20 +3,48 @@ import {
   Grid,
   InputBase,
   Button,
-  Table,
-  TableRow,
-  TableCell,
-  TableHead,
-  TableBody,
-  TextField,
   RadioGroup,
   FormControl,
   FormControlLabel,
   Radio,
 } from "@material-ui/core";
 import "../../App.css";
+import { useMutation } from "@apollo/client";
+import { useFormik } from "formik";
+import { CREATE_CONTRACTOR, GET_CONTRACTOR } from "../../graphql/Queries";
 
 function AddContractor({ addPhy, setAddPhy }) {
+  const [contractorCreate, { data }] = useMutation(CREATE_CONTRACTOR, {
+    refetchQueries: [{ query: GET_CONTRACTOR }],
+  });
+
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      contractor_id: "",
+      street_address: "",
+      city: "New York",
+      zip_code: "",
+      partner_name: "",
+      pharmacy_name: "",
+      email_address: "",
+      phone: "",
+      username: "",
+      state: "California",
+      ncpa: "Yes",
+      partner_id: "",
+    },
+    onSubmit: async (data, reset) => {
+      console.log(data);
+      await contractorCreate({ variables: { contractorInput: data } })
+        .then((res) => {
+          console.log(res);
+          setAddPhy(false)``;
+        })
+        .catch((error) => console.log(error.message));
+    },
+  });
+
   return (
     <div className="AddContractor">
       <div className="content">
@@ -56,7 +84,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Full Name</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.fullName}
+                  onChange={formik.handleChange("fullName")}
+                />
               </div>
             </div>
 
@@ -71,7 +104,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Contractor Id</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.contractor_id}
+                  onChange={formik.handleChange("contractor_id")}
+                />
               </div>
             </div>
 
@@ -98,6 +136,8 @@ function AddContractor({ addPhy, setAddPhy }) {
                   multiline
                   className="namefield"
                   style={{ left: "30px" }}
+                  value={formik.values.street_address}
+                  onChange={formik.handleChange("street_address")}
                 />
               </div>
             </div>
@@ -117,11 +157,15 @@ function AddContractor({ addPhy, setAddPhy }) {
                   placeholder="ID"
                   style={{ left: "30px", fontWeight: "800" }}
                   className="select_ins"
+                  value={formik.values.city}
+                  onChange={formik.handleChange("city")}
                 >
-                  <option placeholder="ID">New York</option>
-                  <option value="001">Cuba</option>
-                  <option value="002">Los Angels</option>
-                  <option value="003">Mexico</option>
+                  <option placeholder="ID" value="New York">
+                    New York
+                  </option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Los Angels">Los Angels</option>
+                  <option value="Mexico">Mexico</option>
                 </select>
               </div>
             </div>
@@ -137,7 +181,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Zip Code</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.zip_code}
+                  onChange={formik.handleChange("zip_code")}
+                />
               </div>
             </div>
 
@@ -152,7 +201,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Partner Name</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.partner_name}
+                  onChange={formik.handleChange("partner_name")}
+                />
               </div>
             </div>
           </Grid>
@@ -174,7 +228,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Pharmacy Name</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.pharmacy_name}
+                  onChange={formik.handleChange("pharmacy_name")}
+                />
               </div>
             </div>
 
@@ -189,7 +248,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Email Address</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.email_address}
+                  onChange={formik.handleChange("email_address")}
+                />
               </div>
             </div>
 
@@ -204,7 +268,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Phone Number</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.phone}
+                  onChange={formik.handleChange("phone")}
+                />
               </div>
             </div>
 
@@ -219,7 +288,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>User Name</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.username}
+                  onChange={formik.handleChange("username")}
+                />
               </div>
             </div>
 
@@ -238,11 +312,13 @@ function AddContractor({ addPhy, setAddPhy }) {
                   placeholder="ID"
                   style={{ left: "30px", fontWeight: "800" }}
                   className="select_ins"
+                  value={formik.values.state}
+                  onChange={formik.handleChange("state")}
                 >
-                  <option placeholder="ID">California</option>
-                  <option value="001">Cuba</option>
-                  <option value="002">Los Angels</option>
-                  <option value="003">Mexico</option>
+                  <option value="California">California</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Los Angels">Los Angels</option>
+                  <option value="Mexico">Mexico</option>
                 </select>
               </div>
             </div>
@@ -259,17 +335,23 @@ function AddContractor({ addPhy, setAddPhy }) {
               </div>
               <div className="radio">
                 <FormControl>
-                  <RadioGroup defaultValue="yes">
+                  <RadioGroup
+                    name="test"
+                    value={formik.values.ncpa}
+                    onChange={formik.handleChange("ncpa")}
+                  >
                     <div className="radio_butt">
                       <FormControlLabel
                         value="Yes"
                         control={<Radio />}
                         label="Yes"
+                        name="test"
                       />
                       <FormControlLabel
                         value="No"
                         control={<Radio />}
                         label="No"
+                        name="test"
                       />
                     </div>
                   </RadioGroup>
@@ -288,7 +370,12 @@ function AddContractor({ addPhy, setAddPhy }) {
                 <label>Partner Id</label>
               </div>
               <div className="namee" style={{ top: "5px", left: "180px" }}>
-                <InputBase className="namefield" style={{ left: "30px" }} />
+                <InputBase
+                  className="namefield"
+                  style={{ left: "30px" }}
+                  value={formik.values.partner_id}
+                  onChange={formik.handleChange("partner_id")}
+                />
               </div>
             </div>
           </Grid>
@@ -318,7 +405,7 @@ function AddContractor({ addPhy, setAddPhy }) {
             <Button
               className="button02_field"
               style={{ color: "white" }}
-              onClick={() => setAddPhy(false)}
+              onClick={formik.handleSubmit}
             >
               Save
             </Button>
