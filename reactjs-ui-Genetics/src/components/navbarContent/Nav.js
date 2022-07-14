@@ -121,13 +121,17 @@ function Nav() {
 
             <Grid
               className={
-                location.pathname === "/ManangeContractors" ? "mc" : "non_mc"
+                location.pathname === "/ManangeContractors" ||
+                location.pathname === "/AddNewContractors"
+                  ? "mc"
+                  : "non_mc"
               }
               onClick={navHandle1}
             >
               <p
                 className={
-                  location.pathname === "/ManangeContractors"
+                  location.pathname === "/ManangeContractors" ||
+                  location.pathname === "/AddNewContractors"
                     ? "mc_text"
                     : "nonmc_text"
                 }

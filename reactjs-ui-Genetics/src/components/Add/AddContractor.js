@@ -11,9 +11,11 @@ import {
 import "../../App.css";
 import { useMutation } from "@apollo/client";
 import { useFormik } from "formik";
+import { useHistory } from "react-router-dom";
 import { CREATE_CONTRACTOR, GET_CONTRACTOR } from "../../graphql/Queries";
 
 function AddContractor({ addPhy, setAddPhy }) {
+  const history = useHistory()
   const [contractorCreate, { data }] = useMutation(CREATE_CONTRACTOR, {
     refetchQueries: [{ query: GET_CONTRACTOR }],
   });
@@ -31,7 +33,7 @@ function AddContractor({ addPhy, setAddPhy }) {
       phone: "",
       username: "",
       state: "California",
-      ncpa: "Yes",
+      ncpa: "",
       partner_id: "",
     },
     onSubmit: async (data, reset) => {
@@ -39,7 +41,7 @@ function AddContractor({ addPhy, setAddPhy }) {
       await contractorCreate({ variables: { contractorInput: data } })
         .then((res) => {
           console.log(res);
-          setAddPhy(false)``;
+          history.push("/ManangeContractors")
         })
         .catch((error) => console.log(error.message));
     },
@@ -392,7 +394,7 @@ function AddContractor({ addPhy, setAddPhy }) {
             <Button
               className="button01_field"
               style={{ color: "white" }}
-              onClick={() => setAddPhy(false)}
+              onClick={() => history.goBack()}
             >
               Cancel
             </Button>

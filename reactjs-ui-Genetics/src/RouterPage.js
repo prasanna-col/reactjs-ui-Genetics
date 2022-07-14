@@ -14,6 +14,7 @@ import ManPat from "./components/navbar/ManPat";
 import SwabK from "./components/navbar/SwabK";
 import Footer from "./components/Footer/Footer";
 import Register from "./components/login/Register";
+import ContractorDetail from "./components/Details/ContractorDetail";
 
 function RouterPage() {
   return (
@@ -35,8 +36,9 @@ function RouterPage() {
         <Route exact path="/ManangePatients" component={ManPat} />
         <Route exact path="/SwabK" component={SwabK} />
         <Route exact path="/AddNewContractors" component={AddContractor} />
+        <Route exact path="/ContractorDetail" component={ContractorDetail} />
       </Switch>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

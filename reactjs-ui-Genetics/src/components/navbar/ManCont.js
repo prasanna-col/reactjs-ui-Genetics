@@ -18,6 +18,7 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 import { useQuery, useMutation } from "@apollo/client";
 import "../navbarCSS/manCont.css";
 import forms from "../../ManCont.json";
@@ -32,6 +33,7 @@ import RoleModal from "../Modals/RoleModal";
 import { GET_CONTRACTOR, DELETE_CONTRACTOR } from "../../graphql/Queries";
 
 function ManCont() {
+  const history = useHistory();
   const { data } = useQuery(GET_CONTRACTOR);
   console.log(data);
 
@@ -47,7 +49,7 @@ function ManCont() {
     setAdd(true);
   };
 
-  const [search, setsearch] = useState("");
+  const [search, setSearch] = useState("");
   const [offset, setOffset] = useState(0);
   const [perPage] = useState(10);
 
@@ -96,7 +98,12 @@ function ManCont() {
             <Typography variant="subtitle1">{data?.street_address}</Typography>
           </TableCell>
           <TableCell>
-            <img src={view} alt="" />
+            <img
+              src={view}
+              alt=""
+              style={{ cursor: "pointer" }}
+              onClick={() => history.push("/ContractorDetail", { state: data })}
+            />
             <img
               src={pencil}
               alt=""
@@ -111,7 +118,7 @@ function ManCont() {
               }}
               src={del}
               alt=""
-              style={{ marginLeft: "10px" }}
+              style={{ marginLeft: "10px", cursor: "pointer" }}
               className="view_icon"
             />
           </TableCell>
@@ -179,7 +186,7 @@ function ManCont() {
                   style={{ left: "30px" }}
                   className="namefield"
                   onChange={(e) => {
-                    setsearch(e.target.value);
+                    setSearch(e.target.value);
                   }}
                 />
               </Grid>
@@ -202,7 +209,7 @@ function ManCont() {
                   style={{ left: "30px" }}
                   className="email_field"
                   onChange={(e) => {
-                    setsearch(e.target.value);
+                    setSearch(e.target.value);
                   }}
                 />
               </Grid>
@@ -218,7 +225,11 @@ function ManCont() {
               </Grid>
               <RoleModal open={open} setOpen={setOpen} />
               <Grid className="button02" style={{ marginLeft: "110px" }}>
-                <Button className="button02_field" style={{ color: "white" }}>
+                <Button
+                  className="button02_field"
+                  style={{ color: "white" }}
+                  onClick={() => setSearch("")}
+                >
                   Reset
                 </Button>
               </Grid>
@@ -227,7 +238,7 @@ function ManCont() {
                 <Button
                   className="button03_field"
                   style={{ color: "white" }}
-                  onClick={addClick}
+                  onClick={() => history.push("/AddNewContractors")}
                 >
                   Add Now
                 </Button>
