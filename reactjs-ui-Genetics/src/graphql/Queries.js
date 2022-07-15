@@ -67,6 +67,15 @@ const DELETE_CONTRACTOR = gql`
     }
   }
 `;
+
+const UPDATE_CONTRACTOR = gql`
+  mutation Mutation($updateContractorInput: UpdateContractorInput) {
+    updateContractor(updateContractorInput: $updateContractorInput) {
+      id
+
+    }
+  }
+`;
 export {
   REGISTER,
   LOGIN,
@@ -74,4 +83,5 @@ export {
   CREATE_CONTRACTOR,
   GET_CONTRACTOR,
   DELETE_CONTRACTOR,
+  UPDATE_CONTRACTOR
 };

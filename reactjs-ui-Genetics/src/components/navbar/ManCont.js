@@ -35,7 +35,6 @@ import { GET_CONTRACTOR, DELETE_CONTRACTOR } from "../../graphql/Queries";
 function ManCont() {
   const history = useHistory();
   const { data } = useQuery(GET_CONTRACTOR);
-  console.log(data);
 
   const [deleteContractor, { loading, data: deletid, error }] = useMutation(
     DELETE_CONTRACTOR,
@@ -63,7 +62,7 @@ function ManCont() {
 
   const pageCount = Math.ceil(data?.contractors.length / perPage);
 
-  const displayData = data?.contractors
+  const displayData = data?.contractors && data?.contractors
     .slice(offset1, offset1 + perPage)
     .filter((value) => {
       if (search === !null) {
@@ -109,6 +108,7 @@ function ManCont() {
               alt=""
               style={{ marginLeft: "10px" }}
               className="view_icon"
+              onClick={() => history.push("/EditContractor", { state: data })}
             />
             <img
               onClick={async () => {

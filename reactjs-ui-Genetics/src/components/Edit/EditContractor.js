@@ -11,35 +11,39 @@ import {
 import "../../App.css";
 import { useMutation } from "@apollo/client";
 import { useFormik } from "formik";
-import { useHistory } from "react-router-dom";
-import { CREATE_CONTRACTOR, GET_CONTRACTOR } from "../../graphql/Queries";
+import { useHistory, useLocation } from "react-router-dom";
+import { UPDATE_CONTRACTOR, GET_CONTRACTOR } from "../../graphql/Queries";
 
-function AddContractor({ addPhy, setAddPhy }) {
+function EditContractor({ addPhy, setAddPhy }) {
   const history = useHistory();
-  const [contractorCreate, { data }] = useMutation(CREATE_CONTRACTOR, {
+  const location = useLocation();
+  const da = location.state.state;
+  const [updateContractor, { data }] = useMutation(UPDATE_CONTRACTOR, {
     refetchQueries: [{ query: GET_CONTRACTOR }],
   });
 
   const formik = useFormik({
     initialValues: {
-      fullName: "",
-      contractor_id: "",
-      street_address: "",
-      city: "New York",
-      zip_code: "",
-      partner_name: "",
-      pharmacy_name: "",
-      email_address: "",
-      phone: "",
-      username: "",
-      state: "California",
-      ncpa: "",
-      partner_id: "",
+      fullName: da?.fullName,
+      contractor_id: da?.contractor_id,
+      street_address: da?.street_address,
+      city: da?.city,
+      zip_code: da?.zip_code,
+      partner_name: da?.partner_name,
+      pharmacy_name: da?.pharmacy_name,
+      email_address: da?.email_address,
+      phone: da?.phone,
+      username: da?.username,
+      state: da?.state,
+      ncpa: da?.ncpa,
+      partner_id: da?.partner_id,
+      id: da?.id
     },
     onSubmit: async (data, reset) => {
       console.log(data);
-      await contractorCreate({ variables: { contractorInput: data } })
+      await updateContractor({ variables: { updateContractorInput: data } })
         .then((res) => {
+          console.log(res);
           history.push("/ManangeContractors");
         })
         .catch((error) => console.log(error.message));
@@ -417,4 +421,4 @@ function AddContractor({ addPhy, setAddPhy }) {
   );
 }
 
-export default AddContractor;
+export default EditContractor;

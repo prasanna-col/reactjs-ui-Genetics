@@ -36,11 +36,33 @@ module.exports = {
     }
   },
 
+  updateContractor: async (args, req) => {
+    if (!req.isAuth) {
+      throw new Error("You are not authenticated");
+    }
+    console.log(args.updateContractorInput);
+    return await constructorSchema.findByIdAndUpdate(args.updateContractorInput.id, {
+      fullName: args.updateContractorInput.fullName,
+      contractor_id: args.updateContractorInput.contractor_id,
+      street_address: args.updateContractorInput.street_address,
+      city: args.updateContractorInput.city,
+      zip_code: args.updateContractorInput.zip_code,
+      partner_name: args.updateContractorInput.partner_name,
+      pharmacy_name: args.updateContractorInput.pharmacy_name,
+      email_address: args.updateContractorInput.email_address,
+      phone: args.updateContractorInput.phone,
+      username: args.updateContractorInput.username,
+      state: args.updateContractorInput.state,
+      ncpa: args.updateContractorInput.ncpa,
+      partner_id: args.updateContractorInput.partner_id,
+    });
+  },
+
   deleteContractor: async (args, req) => {
     if (!req.isAuth) {
       throw new Error("Unauthenticated!");
     }
-    console.log(args);
+    // console.log(args);
     return await constructorSchema.findByIdAndDelete(args.contractorDelete.id);
   },
 };
