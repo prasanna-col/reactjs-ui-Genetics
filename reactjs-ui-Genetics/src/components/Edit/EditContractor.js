@@ -66,7 +66,7 @@ function EditContractor({ addPhy, setAddPhy }) {
             <div
               style={{ marginLeft: "25px", position: "relative", top: "-7px" }}
             >
-              Add New Contractor
+              Edit Contractor
             </div>
           </h2>
         </div>
