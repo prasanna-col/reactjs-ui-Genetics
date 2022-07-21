@@ -37,7 +37,7 @@ function EditContractor({ addPhy, setAddPhy }) {
       state: da?.state,
       ncpa: da?.ncpa,
       partner_id: da?.partner_id,
-      id: da?.id
+      id: da?.id,
     },
     onSubmit: async (data, reset) => {
       console.log(data);

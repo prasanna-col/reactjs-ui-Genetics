@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer";
 import Register from "./components/login/Register";
 import ContractorDetail from "./components/Details/ContractorDetail";
 import EditContractor from "./components/Edit/EditContractor";
+import AddEmployee from "./components/Add/AddEmployee";
 
 function RouterPage() {
   return (
@@ -39,6 +40,7 @@ function RouterPage() {
         <Route exact path="/AddNewContractors" component={AddContractor} />
         <Route exact path="/EditContractor" component={EditContractor} />
         <Route exact path="/ContractorDetail" component={ContractorDetail} />
+        <Route exact path="/AddEmployee" component={AddEmployee} />
       </Switch>
       <Footer />
     </Router>
